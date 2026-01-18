@@ -1,0 +1,1001 @@
+order_id,order_date,customer_id,product_id,quantity,unit_price,country,payment_method,status
+1,2024-04-26,C043,P004,1,210.89,Peru,Credit Card,Cancelled
+2,2024-12-05,C016,P003,3,183.64,Peru,Cash,Delivered
+3,2024-03-03,C036,P010,5,73.78,Brazil,Debit Card,Cancelled
+4,2024-06-16,C011,P007,3,241.12,Chile,Debit Card,Cancelled
+5,2024-03-11,C046,P013,3,82.61,Brazil,Debit Card,Cancelled
+6,2024-03-09,C042,P016,4,89.6,Peru,Cash,Delivered
+7,2024-07-18,C015,P014,3,131.64,Mexico,Credit Card,Processing
+8,2024-09-03,C039,P006,4,400.21,Chile,Debit Card,Returned
+9,2024-07-16,C050,P003,4,299.69,Peru,Credit Card,Cancelled
+10,2024-10-30,C015,P017,3,357.7,Colombia,PayPal,Delivered
+11,2024-01-29,C007,P003,1,233.07,Argentina,Credit Card,Delivered
+12,2024-02-12,C021,P014,4,180.49,Argentina,Credit Card,Processing
+13,2024-06-21,C044,P016,5,476.55,Argentina,PIX,Processing
+14,2024-01-22,C039,P009,3,479.95,Argentina,Cash,Processing
+15,2024-02-23,C004,P012,4,177.57,Peru,PIX,Returned
+16,2024-06-16,C012,P019,4,205.54,Mexico,Credit Card,Delivered
+17,2024-06-17,C029,P007,3,121.54,Colombia,Credit Card,Cancelled
+18,2024-01-28,C045,P007,4,336.55,Peru,Debit Card,Cancelled
+19,2024-12-22,C021,P009,1,327.63,Brazil,PIX,Cancelled
+20,2024-08-01,C028,P007,4,434.17,Brazil,PayPal,Processing
+21,2024-05-05,C043,P004,1,420.2,Peru,PayPal,Delivered
+22,2024-08-29,C036,P006,5,481.67,Peru,PIX,Returned
+23,2024-06-01,C011,P003,3,38.99,Colombia,Debit Card,Cancelled
+24,2024-02-22,C029,P010,3,136.2,Brazil,PayPal,Delivered
+25,2024-11-21,C027,P001,1,227.41,Argentina,Credit Card,Processing
+26,2024-07-19,C019,P010,2,447.82,Chile,PayPal,Processing
+27,2024-06-14,C006,P015,5,54.08,Argentina,Cash,Processing
+28,2024-02-05,C018,P013,1,411.66,Colombia,PayPal,Processing
+29,2024-04-04,C018,P005,1,10.81,Peru,PayPal,Delivered
+30,2024-01-10,C042,P015,5,134.74,Chile,Credit Card,Processing
+31,2024-11-29,C028,P006,3,196.89,Colombia,Cash,Cancelled
+32,2024-12-17,C040,P002,3,351.36,Argentina,Debit Card,Returned
+33,2024-11-24,C034,P020,2,251.11,Colombia,Debit Card,Returned
+34,2024-01-07,C035,P017,1,145.96,Mexico,Credit Card,Returned
+35,2024-12-05,C020,P002,4,246.65,Mexico,Credit Card,Cancelled
+36,2024-12-06,C043,P005,4,73.45,Colombia,Debit Card,Processing
+37,2024-11-12,C017,P016,1,142.03,Chile,PIX,Returned
+38,2024-08-28,C007,P004,2,96.27,Argentina,PayPal,Returned
+39,2024-04-10,C002,P009,4,472.13,Mexico,PIX,Returned
+40,2024-04-27,C039,P003,3,256.77,Brazil,Debit Card,Cancelled
+41,2024-11-20,C034,P003,2,279.88,Argentina,Credit Card,Returned
+42,2024-04-14,C042,P012,2,264.39,Chile,Credit Card,Delivered
+43,2024-07-29,C006,P007,4,24.51,Chile,Credit Card,Cancelled
+44,2024-12-21,C037,P004,3,98.33,Mexico,Debit Card,Delivered
+45,2024-04-07,C003,P013,5,46.79,Chile,Cash,Returned
+46,2024-06-26,C002,P007,5,227.34,Brazil,PIX,Delivered
+47,2024-07-27,C010,P015,2,392.36,Colombia,PIX,Delivered
+48,2024-09-30,C037,P001,3,167.0,Chile,Cash,Delivered
+49,2024-03-03,C007,P017,5,167.11,Mexico,Debit Card,Returned
+50,2024-08-13,C002,P019,5,237.18,Argentina,Credit Card,Processing
+51,2024-02-27,C029,P008,3,176.74,Colombia,Credit Card,Processing
+52,2024-03-25,C049,P012,2,123.88,Mexico,Debit Card,Delivered
+53,2024-07-24,C046,P008,3,302.37,Brazil,Debit Card,Delivered
+54,2024-04-02,C026,P012,1,465.84,Brazil,Credit Card,Processing
+55,2024-07-05,C050,P003,2,447.56,Mexico,PayPal,Delivered
+56,2024-05-17,C042,P008,4,100.38,Peru,Cash,Returned
+57,2024-08-07,C016,P011,3,174.52,Chile,Cash,Processing
+58,2024-11-21,C048,P017,1,182.91,Chile,Cash,Returned
+59,2024-03-20,C002,P002,2,351.64,Chile,Cash,Cancelled
+60,2024-01-11,C034,P013,3,281.46,Argentina,Credit Card,Cancelled
+61,2024-05-02,C035,P009,4,296.86,Peru,Debit Card,Cancelled
+62,2024-03-04,C004,P007,3,91.33,Brazil,Debit Card,Processing
+63,2024-02-15,C020,P004,5,371.41,Mexico,PIX,Delivered
+64,2024-11-23,C022,P005,3,51.82,Brazil,Debit Card,Delivered
+65,2024-06-22,C030,P012,4,302.88,Mexico,Cash,Delivered
+66,2024-01-27,C036,P014,5,253.68,Colombia,Cash,Delivered
+67,2024-12-07,C006,P005,3,376.17,Argentina,PayPal,Processing
+68,2024-07-31,C026,P009,5,169.27,Argentina,Cash,Processing
+69,2024-12-31,C003,P008,5,476.64,Peru,Credit Card,Processing
+70,2024-01-07,C031,P015,2,392.45,Chile,Debit Card,Returned
+71,2024-03-04,C020,P012,2,141.46,Peru,PIX,Returned
+72,2024-01-23,C006,P003,2,450.67,Mexico,Credit Card,Delivered
+73,2024-12-11,C033,P008,5,427.53,Peru,PayPal,Returned
+74,2024-02-11,C023,P017,1,138.02,Colombia,Debit Card,Delivered
+75,2024-11-25,C007,P013,2,350.09,Peru,PIX,Processing
+76,2024-02-22,C008,P003,2,381.55,Colombia,Debit Card,Returned
+77,2024-01-03,C045,P008,3,457.81,Brazil,Debit Card,Cancelled
+78,2024-12-24,C031,P020,4,26.89,Mexico,Debit Card,Delivered
+79,2024-03-14,C006,P010,1,422.8,Peru,PIX,Delivered
+80,2024-08-09,C030,P017,1,361.66,Chile,Cash,Cancelled
+81,2024-04-06,C017,P016,3,33.23,Argentina,PIX,Cancelled
+82,2024-12-01,C032,P007,5,411.68,Colombia,Debit Card,Returned
+83,2024-06-24,C006,P012,5,166.16,Argentina,PayPal,Delivered
+84,2024-06-26,C038,P018,2,357.68,Peru,PayPal,Returned
+85,2024-05-12,C019,P009,3,95.93,Chile,PIX,Delivered
+86,2024-11-03,C046,P003,2,241.31,Mexico,Credit Card,Processing
+87,2024-01-22,C022,P017,4,196.02,Peru,PIX,Returned
+88,2024-04-10,C044,P011,5,12.84,Colombia,PIX,Delivered
+89,2024-04-12,C040,P003,3,148.76,Argentina,Debit Card,Delivered
+90,2024-03-23,C026,P006,5,368.7,Chile,PayPal,Processing
+91,2024-10-22,C022,P007,4,385.96,Argentina,PIX,Delivered
+92,2024-02-12,C024,P019,5,65.33,Brazil,PayPal,Cancelled
+93,2024-08-07,C021,P010,1,427.57,Argentina,Credit Card,Returned
+94,2024-03-25,C040,P012,3,445.42,Argentina,Credit Card,Processing
+95,2024-04-07,C034,P013,4,98.49,Mexico,Debit Card,Cancelled
+96,2024-02-08,C044,P009,3,424.26,Mexico,PayPal,Returned
+97,2024-10-29,C043,P010,2,459.81,Mexico,Debit Card,Returned
+98,2024-09-26,C010,P014,3,257.64,Colombia,Debit Card,Cancelled
+99,2024-09-26,C025,P004,5,193.66,Brazil,PIX,Returned
+100,2024-07-09,C011,P010,4,22.61,Colombia,Debit Card,Processing
+101,2024-11-18,C048,P011,4,381.32,Mexico,PayPal,Returned
+102,2024-09-12,C047,P006,5,76.45,Peru,PayPal,Processing
+103,2024-07-16,C025,P007,3,217.76,Chile,Debit Card,Processing
+104,2024-07-31,C042,P019,2,147.53,Colombia,PayPal,Returned
+105,2024-11-30,C042,P008,3,394.59,Peru,Cash,Cancelled
+106,2024-09-02,C044,P013,4,202.49,Mexico,PIX,Delivered
+107,2024-06-19,C032,P003,3,485.0,Peru,Credit Card,Delivered
+108,2024-12-12,C017,P009,5,478.16,Mexico,Cash,Delivered
+109,2024-07-17,C041,P010,2,492.65,Mexico,PIX,Processing
+110,2024-02-08,C042,P013,2,110.34,Peru,Credit Card,Cancelled
+111,2024-06-07,C017,P011,2,78.96,Argentina,Debit Card,Cancelled
+112,2024-12-15,C023,P011,2,83.73,Argentina,Debit Card,Cancelled
+113,2024-06-05,C005,P007,1,158.04,Brazil,Debit Card,Delivered
+114,2024-01-02,C002,P019,2,270.21,Brazil,Credit Card,Cancelled
+115,2024-01-10,C022,P019,5,494.41,Colombia,Debit Card,Delivered
+116,2024-01-09,C035,P014,5,487.02,Peru,Credit Card,Processing
+117,2024-09-18,C030,P005,1,252.35,Chile,Debit Card,Cancelled
+118,2024-02-13,C023,P015,2,304.16,Mexico,Cash,Delivered
+119,2024-08-29,C041,P005,5,362.48,Brazil,Cash,Cancelled
+120,2024-12-07,C036,P005,1,361.41,Argentina,PayPal,Processing
+121,2024-12-17,C023,P016,5,271.75,Argentina,Credit Card,Delivered
+122,2024-05-13,C048,P005,5,132.79,Argentina,PIX,Returned
+123,2024-10-05,C048,P002,4,124.58,Argentina,Credit Card,Returned
+124,2024-08-28,C019,P001,1,21.89,Chile,PayPal,Cancelled
+125,2024-09-30,C004,P008,5,330.57,Chile,Debit Card,Cancelled
+126,2024-06-17,C021,P007,2,137.29,Argentina,Cash,Delivered
+127,2024-08-02,C039,P015,5,200.2,Peru,Debit Card,Cancelled
+128,2024-03-30,C045,P012,1,40.38,Argentina,Cash,Returned
+129,2024-08-12,C047,P006,3,493.3,Colombia,PIX,Cancelled
+130,2024-05-12,C030,P014,4,240.51,Argentina,Credit Card,Delivered
+131,2024-02-27,C017,P009,5,228.56,Chile,PIX,Cancelled
+132,2024-05-13,C049,P017,2,467.91,Brazil,Credit Card,Processing
+133,2024-11-28,C005,P015,3,246.14,Peru,Debit Card,Returned
+134,2024-11-24,C027,P012,5,107.67,Brazil,Cash,Delivered
+135,2024-04-04,C003,P002,2,274.08,Brazil,PIX,Returned
+136,2024-05-29,C006,P016,5,284.01,Colombia,Debit Card,Delivered
+137,2024-08-26,C027,P004,4,460.41,Mexico,Debit Card,Returned
+138,2024-01-18,C003,P012,4,336.15,Chile,PayPal,Returned
+139,2024-08-02,C034,P001,4,172.54,Mexico,PayPal,Processing
+140,2024-08-01,C032,P012,4,116.67,Colombia,PIX,Processing
+141,2024-06-15,C001,P018,1,186.79,Colombia,PIX,Returned
+142,2024-10-22,C002,P007,5,146.95,Brazil,Credit Card,Cancelled
+143,2024-04-18,C001,P009,5,280.12,Mexico,PIX,Delivered
+144,2024-02-06,C009,P020,1,289.7,Mexico,PIX,Cancelled
+145,2024-03-09,C037,P015,2,441.37,Brazil,PIX,Processing
+146,2024-02-24,C047,P009,1,440.4,Peru,Cash,Processing
+147,2024-07-03,C003,P006,2,184.44,Peru,PayPal,Cancelled
+148,2024-07-23,C026,P020,1,41.39,Argentina,PIX,Delivered
+149,2024-03-04,C047,P017,4,372.59,Peru,PayPal,Returned
+150,2024-11-17,C010,P017,4,270.74,Mexico,Credit Card,Processing
+151,2024-01-18,C020,P010,5,22.76,Colombia,PIX,Returned
+152,2024-02-22,C038,P011,1,299.79,Chile,PIX,Returned
+153,2024-11-02,C028,P007,3,496.12,Colombia,Cash,Delivered
+154,2024-12-27,C010,P005,1,259.74,Mexico,PayPal,Cancelled
+155,2024-01-28,C039,P017,3,424.45,Chile,Cash,Cancelled
+156,2024-05-24,C012,P003,5,310.9,Mexico,Credit Card,Cancelled
+157,2024-01-01,C039,P012,3,337.99,Colombia,PIX,Cancelled
+158,2024-12-24,C016,P013,4,110.48,Mexico,Credit Card,Returned
+159,2024-11-29,C045,P011,3,220.22,Colombia,Debit Card,Processing
+160,2024-01-11,C048,P003,3,374.8,Argentina,Credit Card,Returned
+161,2024-08-24,C032,P002,2,47.04,Peru,Credit Card,Returned
+162,2024-02-16,C007,P010,1,340.15,Colombia,PayPal,Delivered
+163,2024-12-07,C049,P009,5,262.48,Peru,Debit Card,Delivered
+164,2024-12-03,C047,P003,4,371.54,Argentina,Cash,Returned
+165,2024-05-29,C041,P011,3,481.95,Chile,Cash,Returned
+166,2024-08-26,C040,P013,5,426.88,Mexico,PIX,Delivered
+167,2024-04-24,C046,P011,4,170.48,Chile,Cash,Delivered
+168,2024-06-18,C021,P020,5,318.7,Peru,PayPal,Returned
+169,2024-07-16,C013,P006,5,315.27,Colombia,Credit Card,Cancelled
+170,2024-09-27,C028,P009,2,389.52,Mexico,PIX,Delivered
+171,2024-11-01,C007,P005,2,157.48,Peru,Debit Card,Cancelled
+172,2024-09-12,C023,P013,5,191.71,Argentina,Credit Card,Processing
+173,2024-09-05,C033,P007,5,147.13,Colombia,Debit Card,Delivered
+174,2024-06-22,C029,P008,3,377.99,Brazil,PayPal,Cancelled
+175,2024-04-28,C050,P018,4,342.34,Argentina,Credit Card,Processing
+176,2024-03-22,C043,P010,4,482.53,Argentina,Credit Card,Delivered
+177,2024-09-25,C021,P005,5,288.09,Peru,Debit Card,Returned
+178,2024-08-24,C006,P004,5,38.96,Peru,Credit Card,Delivered
+179,2024-01-09,C040,P003,4,465.4,Colombia,PIX,Delivered
+180,2024-11-17,C007,P015,4,126.56,Brazil,Debit Card,Returned
+181,2024-04-10,C042,P011,5,246.93,Brazil,Debit Card,Processing
+182,2024-12-15,C023,P006,3,70.57,Mexico,Debit Card,Returned
+183,2024-12-27,C044,P007,3,120.39,Argentina,Credit Card,Processing
+184,2024-06-29,C047,P016,4,347.12,Chile,PIX,Delivered
+185,2024-10-26,C043,P019,3,154.73,Peru,PIX,Delivered
+186,2024-10-02,C013,P005,3,105.06,Mexico,Cash,Processing
+187,2024-09-25,C044,P017,3,110.88,Colombia,Cash,Processing
+188,2024-01-20,C035,P013,5,437.19,Colombia,Credit Card,Cancelled
+189,2024-08-14,C026,P001,5,162.3,Chile,PayPal,Cancelled
+190,2024-11-26,C035,P009,5,214.6,Peru,Debit Card,Delivered
+191,2024-01-11,C006,P013,5,39.84,Chile,Credit Card,Processing
+192,2024-01-15,C022,P013,4,493.18,Chile,PayPal,Returned
+193,2024-05-30,C013,P020,2,129.73,Mexico,Credit Card,Returned
+194,2024-11-12,C033,P014,3,77.8,Argentina,Credit Card,Processing
+195,2024-06-03,C038,P012,1,427.65,Argentina,PIX,Delivered
+196,2024-11-22,C048,P020,5,259.05,Brazil,Cash,Processing
+197,2024-11-12,C014,P008,3,358.43,Brazil,Cash,Processing
+198,2024-01-25,C031,P012,5,237.42,Peru,PayPal,Cancelled
+199,2024-07-06,C020,P016,3,141.04,Peru,Debit Card,Delivered
+200,2024-05-31,C003,P009,1,70.99,Peru,PayPal,Returned
+201,2024-10-23,C038,P017,3,379.2,Mexico,PayPal,Delivered
+202,2024-05-13,C027,P012,4,151.69,Colombia,Cash,Delivered
+203,2024-08-16,C038,P012,1,378.91,Chile,Credit Card,Cancelled
+204,2024-03-25,C005,P008,4,120.45,Peru,Debit Card,Cancelled
+205,2024-09-16,C049,P003,4,373.72,Brazil,Cash,Cancelled
+206,2024-04-28,C034,P005,3,71.35,Chile,PayPal,Processing
+207,2024-03-28,C034,P001,2,240.67,Argentina,PayPal,Returned
+208,2024-11-27,C005,P008,4,96.41,Chile,PayPal,Cancelled
+209,2024-11-05,C003,P007,2,34.23,Argentina,Cash,Delivered
+210,2024-10-15,C026,P019,1,180.25,Peru,Cash,Delivered
+211,2024-09-26,C048,P009,1,250.44,Peru,Debit Card,Delivered
+212,2024-02-22,C020,P006,4,80.43,Argentina,Credit Card,Cancelled
+213,2024-08-21,C007,P020,2,395.74,Chile,Credit Card,Returned
+214,2024-02-26,C007,P016,3,368.75,Colombia,PIX,Returned
+215,2024-03-11,C045,P002,1,124.54,Brazil,Debit Card,Cancelled
+216,2024-07-09,C036,P006,5,168.72,Peru,Credit Card,Processing
+217,2024-07-21,C011,P011,3,81.08,Argentina,Credit Card,Delivered
+218,2024-07-16,C011,P002,4,110.54,Peru,Debit Card,Processing
+219,2024-03-29,C027,P007,1,366.34,Brazil,Debit Card,Cancelled
+220,2024-08-02,C037,P007,4,232.74,Argentina,PIX,Returned
+221,2024-06-15,C038,P017,1,126.49,Colombia,Cash,Cancelled
+222,2024-03-16,C010,P012,2,105.65,Chile,Debit Card,Delivered
+223,2024-11-29,C017,P020,2,391.17,Brazil,Cash,Returned
+224,2024-02-15,C032,P009,5,76.8,Peru,Credit Card,Returned
+225,2024-08-23,C015,P018,1,294.85,Argentina,PayPal,Cancelled
+226,2024-09-01,C034,P006,5,209.18,Colombia,Cash,Returned
+227,2024-04-08,C015,P008,2,257.74,Argentina,Credit Card,Returned
+228,2024-07-25,C040,P019,2,231.06,Argentina,PayPal,Delivered
+229,2024-08-30,C046,P014,2,29.75,Mexico,Debit Card,Returned
+230,2024-07-29,C043,P012,3,341.4,Argentina,Debit Card,Delivered
+231,2024-08-27,C040,P015,4,475.15,Colombia,Debit Card,Returned
+232,2024-03-16,C002,P002,5,253.28,Mexico,Credit Card,Processing
+233,2024-03-28,C038,P009,5,277.8,Colombia,Debit Card,Processing
+234,2024-05-27,C005,P020,5,21.01,Peru,Debit Card,Returned
+235,2024-12-15,C048,P019,4,201.83,Colombia,PIX,Processing
+236,2024-08-26,C033,P008,5,356.96,Mexico,PayPal,Processing
+237,2024-03-30,C004,P001,4,372.03,Argentina,Debit Card,Cancelled
+238,2024-02-13,C033,P010,1,356.02,Peru,PayPal,Returned
+239,2024-07-07,C041,P001,4,101.15,Chile,PIX,Processing
+240,2024-09-22,C010,P017,4,217.56,Mexico,Cash,Returned
+241,2024-12-19,C046,P003,3,466.5,Mexico,PIX,Processing
+242,2024-06-08,C023,P018,2,48.87,Brazil,Cash,Returned
+243,2024-08-23,C048,P013,1,155.83,Colombia,Cash,Delivered
+244,2024-01-03,C041,P007,4,304.48,Colombia,Cash,Processing
+245,2024-01-05,C041,P005,3,311.85,Chile,PIX,Cancelled
+246,2024-05-21,C027,P003,1,113.97,Colombia,Debit Card,Delivered
+247,2024-11-15,C036,P003,1,164.05,Mexico,Debit Card,Processing
+248,2024-03-21,C037,P001,3,50.72,Colombia,PayPal,Returned
+249,2024-12-16,C027,P001,2,272.42,Mexico,PIX,Processing
+250,2024-03-01,C012,P017,4,130.23,Colombia,Credit Card,Processing
+251,2024-06-14,C018,P016,2,439.6,Chile,Credit Card,Cancelled
+252,2024-03-14,C001,P019,3,196.06,Argentina,Cash,Delivered
+253,2024-02-05,C015,P004,5,416.81,Chile,Credit Card,Cancelled
+254,2024-08-04,C008,P017,3,294.78,Mexico,Cash,Delivered
+255,2024-06-03,C041,P005,5,464.59,Peru,PIX,Cancelled
+256,2024-02-03,C044,P006,1,188.96,Mexico,PayPal,Processing
+257,2024-12-25,C021,P001,2,13.92,Mexico,PIX,Returned
+258,2024-06-12,C011,P015,1,419.04,Argentina,Credit Card,Cancelled
+259,2024-06-06,C020,P019,3,375.22,Chile,Cash,Delivered
+260,2024-08-05,C014,P020,3,474.67,Argentina,Cash,Processing
+261,2024-12-03,C009,P017,4,479.14,Colombia,PIX,Cancelled
+262,2024-07-17,C029,P008,2,416.6,Argentina,Debit Card,Delivered
+263,2024-08-27,C041,P006,5,296.01,Argentina,Credit Card,Cancelled
+264,2024-05-07,C019,P008,4,33.31,Colombia,Debit Card,Cancelled
+265,2024-05-20,C003,P012,1,377.26,Peru,PayPal,Delivered
+266,2024-01-29,C021,P012,5,390.3,Chile,Debit Card,Processing
+267,2024-09-16,C017,P009,5,279.56,Chile,Credit Card,Delivered
+268,2024-04-16,C028,P020,4,278.35,Chile,PIX,Returned
+269,2024-05-09,C010,P016,3,370.12,Argentina,Credit Card,Processing
+270,2024-10-09,C027,P018,5,285.98,Mexico,Debit Card,Returned
+271,2024-10-06,C003,P007,3,479.79,Peru,PIX,Delivered
+272,2024-07-03,C037,P018,2,91.73,Mexico,Cash,Returned
+273,2024-12-30,C034,P016,5,71.42,Colombia,PayPal,Cancelled
+274,2024-12-02,C028,P019,4,179.09,Peru,Debit Card,Processing
+275,2024-05-24,C045,P015,3,232.36,Argentina,Debit Card,Returned
+276,2024-02-26,C006,P020,3,465.9,Mexico,PIX,Returned
+277,2024-11-11,C030,P001,4,73.19,Peru,Cash,Processing
+278,2024-09-04,C002,P014,5,425.32,Peru,Cash,Cancelled
+279,2024-01-04,C044,P016,3,88.81,Mexico,Cash,Delivered
+280,2024-10-06,C025,P008,2,328.7,Argentina,Cash,Processing
+281,2024-05-30,C005,P008,5,71.11,Peru,Cash,Returned
+282,2024-05-28,C003,P017,2,156.17,Colombia,Debit Card,Delivered
+283,2024-04-01,C014,P006,3,225.19,Argentina,Debit Card,Returned
+284,2024-03-15,C031,P013,3,72.35,Mexico,PayPal,Delivered
+285,2024-08-05,C001,P018,3,431.29,Colombia,Credit Card,Returned
+286,2024-01-09,C020,P020,2,401.8,Colombia,Cash,Returned
+287,2024-01-01,C020,P014,2,193.74,Mexico,Debit Card,Returned
+288,2024-02-04,C048,P015,3,465.44,Colombia,Credit Card,Cancelled
+289,2024-04-26,C024,P010,5,92.46,Argentina,PayPal,Processing
+290,2024-07-15,C010,P018,1,299.87,Peru,PayPal,Processing
+291,2024-08-03,C033,P004,5,245.66,Mexico,Cash,Returned
+292,2024-01-30,C014,P001,3,287.48,Mexico,Credit Card,Processing
+293,2024-01-22,C017,P011,3,165.83,Colombia,PIX,Cancelled
+294,2024-12-28,C031,P014,2,365.54,Mexico,Cash,Cancelled
+295,2024-10-29,C013,P004,3,262.57,Chile,Debit Card,Delivered
+296,2024-03-26,C039,P007,5,177.98,Chile,Credit Card,Processing
+297,2024-01-11,C002,P002,5,236.85,Mexico,Debit Card,Delivered
+298,2024-11-02,C012,P019,4,157.72,Brazil,PayPal,Delivered
+299,2024-08-29,C046,P006,1,72.12,Mexico,PayPal,Processing
+300,2024-01-13,C003,P006,3,31.58,Argentina,Cash,Cancelled
+301,2024-03-16,C013,P012,5,72.64,Peru,PIX,Cancelled
+302,2024-04-05,C009,P006,4,203.69,Brazil,Debit Card,Delivered
+303,2024-10-22,C043,P002,4,271.06,Chile,PIX,Delivered
+304,2024-09-05,C018,P003,3,463.3,Brazil,PayPal,Processing
+305,2024-10-12,C006,P002,3,127.35,Colombia,PIX,Delivered
+306,2024-08-07,C042,P009,5,13.21,Peru,Credit Card,Delivered
+307,2024-04-16,C033,P010,1,413.25,Peru,PayPal,Processing
+308,2024-04-07,C039,P005,4,241.72,Peru,PayPal,Processing
+309,2024-10-04,C007,P012,3,218.88,Brazil,Credit Card,Returned
+310,2024-10-28,C003,P004,4,25.22,Colombia,PayPal,Cancelled
+311,2024-08-18,C010,P006,4,238.7,Brazil,PayPal,Delivered
+312,2024-01-29,C013,P003,1,146.82,Chile,Credit Card,Returned
+313,2024-04-04,C021,P019,2,126.99,Argentina,Credit Card,Cancelled
+314,2024-10-08,C031,P019,3,375.52,Peru,Cash,Delivered
+315,2024-03-03,C041,P002,5,59.04,Brazil,Cash,Returned
+316,2024-11-14,C045,P013,4,135.83,Mexico,Cash,Returned
+317,2024-11-08,C020,P009,5,230.0,Argentina,Credit Card,Delivered
+318,2024-08-10,C042,P008,4,279.31,Mexico,PayPal,Delivered
+319,2024-10-02,C029,P015,2,203.99,Colombia,PIX,Cancelled
+320,2024-03-30,C024,P016,3,105.71,Peru,PayPal,Returned
+321,2024-04-23,C043,P008,2,437.63,Mexico,Debit Card,Returned
+322,2024-06-01,C010,P020,3,243.98,Argentina,Debit Card,Processing
+323,2024-10-22,C036,P011,5,190.35,Mexico,PayPal,Returned
+324,2024-06-19,C007,P003,5,180.51,Chile,Cash,Delivered
+325,2024-06-17,C033,P014,5,105.83,Chile,Cash,Cancelled
+326,2024-12-19,C050,P001,5,382.74,Mexico,PIX,Processing
+327,2024-02-12,C036,P006,3,308.28,Peru,PIX,Processing
+328,2024-05-14,C029,P009,2,350.19,Peru,Cash,Returned
+329,2024-02-23,C015,P011,2,354.28,Peru,Cash,Cancelled
+330,2024-06-12,C042,P008,5,331.75,Peru,Debit Card,Processing
+331,2024-02-17,C003,P019,5,387.23,Argentina,PIX,Delivered
+332,2024-05-28,C008,P002,3,320.91,Peru,PIX,Delivered
+333,2024-02-23,C032,P010,4,292.05,Brazil,Cash,Returned
+334,2024-11-21,C046,P019,5,131.93,Peru,Debit Card,Returned
+335,2024-11-15,C001,P019,2,218.52,Mexico,Cash,Delivered
+336,2024-12-06,C011,P012,5,417.97,Colombia,Debit Card,Returned
+337,2024-11-05,C001,P005,2,232.34,Colombia,Credit Card,Processing
+338,2024-07-21,C015,P011,3,335.06,Mexico,PayPal,Returned
+339,2024-07-24,C024,P004,4,257.91,Argentina,PayPal,Delivered
+340,2024-10-12,C005,P013,5,433.97,Peru,Debit Card,Returned
+341,2024-10-18,C026,P007,1,346.33,Chile,Debit Card,Cancelled
+342,2024-10-09,C015,P003,3,394.96,Peru,PayPal,Returned
+343,2024-11-18,C010,P011,4,247.44,Mexico,Cash,Cancelled
+344,2024-05-31,C021,P020,1,385.99,Colombia,Cash,Delivered
+345,2024-05-25,C013,P009,1,374.18,Brazil,PayPal,Cancelled
+346,2024-10-15,C043,P019,4,392.56,Brazil,PIX,Cancelled
+347,2024-02-29,C038,P019,1,435.11,Colombia,Credit Card,Delivered
+348,2024-07-25,C027,P019,4,276.58,Chile,PayPal,Returned
+349,2024-08-04,C031,P012,4,132.04,Peru,PayPal,Delivered
+350,2024-12-28,C049,P017,3,95.89,Chile,Debit Card,Processing
+351,2024-04-25,C049,P001,2,481.88,Peru,PayPal,Cancelled
+352,2024-12-15,C002,P005,5,468.9,Mexico,PIX,Returned
+353,2024-12-16,C007,P008,1,257.61,Chile,Credit Card,Processing
+354,2024-05-25,C032,P003,5,118.9,Chile,Cash,Cancelled
+355,2024-08-15,C002,P020,4,98.82,Mexico,Debit Card,Cancelled
+356,2024-01-17,C016,P004,3,459.21,Mexico,Debit Card,Processing
+357,2024-08-24,C003,P012,3,15.93,Argentina,PayPal,Delivered
+358,2024-07-16,C044,P006,2,62.05,Mexico,PIX,Processing
+359,2024-07-23,C020,P016,4,364.97,Chile,Debit Card,Returned
+360,2024-08-05,C012,P007,5,283.53,Brazil,Debit Card,Cancelled
+361,2024-04-03,C047,P014,2,230.51,Argentina,PIX,Cancelled
+362,2024-05-14,C027,P009,3,337.59,Colombia,Cash,Delivered
+363,2024-03-23,C049,P012,2,478.21,Chile,PayPal,Delivered
+364,2024-10-16,C009,P010,5,416.91,Argentina,PIX,Delivered
+365,2024-12-21,C018,P009,1,44.68,Brazil,Cash,Processing
+366,2024-04-30,C038,P004,2,228.96,Peru,Cash,Processing
+367,2024-01-04,C044,P015,3,105.03,Chile,PIX,Processing
+368,2024-06-08,C025,P014,5,43.46,Argentina,Cash,Returned
+369,2024-08-26,C044,P001,5,307.71,Peru,PayPal,Processing
+370,2024-03-15,C039,P020,2,52.31,Colombia,PayPal,Cancelled
+371,2024-08-26,C010,P012,3,244.82,Brazil,Debit Card,Cancelled
+372,2024-08-08,C028,P015,2,121.42,Peru,Cash,Processing
+373,2024-05-20,C035,P002,4,45.98,Argentina,PIX,Delivered
+374,2024-08-31,C014,P012,4,251.89,Mexico,Credit Card,Cancelled
+375,2024-11-22,C019,P012,4,33.33,Peru,Cash,Processing
+376,2024-05-31,C031,P004,1,205.57,Brazil,Debit Card,Delivered
+377,2024-06-26,C047,P007,3,419.54,Mexico,Debit Card,Processing
+378,2024-10-16,C012,P019,2,389.55,Peru,Credit Card,Processing
+379,2024-05-28,C005,P015,5,52.41,Mexico,PIX,Cancelled
+380,2024-10-19,C010,P015,2,361.85,Chile,PayPal,Processing
+381,2024-05-02,C045,P017,2,421.46,Argentina,PayPal,Delivered
+382,2024-10-27,C043,P001,3,249.02,Chile,PIX,Returned
+383,2024-03-13,C036,P008,1,170.77,Brazil,PayPal,Delivered
+384,2024-02-13,C030,P008,3,482.97,Chile,Cash,Processing
+385,2024-12-23,C016,P006,1,386.38,Peru,PayPal,Returned
+386,2024-04-15,C035,P020,3,268.73,Argentina,Debit Card,Processing
+387,2024-09-27,C033,P014,5,483.98,Peru,Debit Card,Delivered
+388,2024-06-19,C019,P015,2,129.0,Brazil,Credit Card,Returned
+389,2024-03-11,C002,P005,1,256.15,Argentina,PIX,Returned
+390,2024-03-22,C043,P001,3,33.8,Peru,PayPal,Cancelled
+391,2024-03-21,C001,P013,4,146.4,Colombia,PayPal,Delivered
+392,2024-11-21,C015,P015,1,280.03,Chile,Debit Card,Delivered
+393,2024-01-15,C038,P019,4,271.86,Argentina,Debit Card,Returned
+394,2024-05-16,C017,P006,1,485.21,Argentina,Cash,Delivered
+395,2024-06-21,C018,P017,5,354.94,Chile,PayPal,Cancelled
+396,2024-09-24,C013,P018,5,185.42,Chile,Credit Card,Cancelled
+397,2024-08-21,C023,P020,2,98.51,Colombia,Debit Card,Cancelled
+398,2024-07-05,C024,P002,5,22.1,Brazil,PIX,Delivered
+399,2024-01-18,C027,P009,1,411.73,Colombia,Debit Card,Processing
+400,2024-09-09,C014,P005,1,140.54,Argentina,PayPal,Cancelled
+401,2024-04-09,C041,P014,4,270.72,Colombia,PIX,Returned
+402,2024-03-25,C026,P011,2,212.31,Peru,PIX,Delivered
+403,2024-10-28,C025,P010,3,119.66,Brazil,Credit Card,Delivered
+404,2024-05-22,C048,P015,1,209.15,Brazil,PayPal,Processing
+405,2024-08-01,C032,P003,5,137.41,Peru,Cash,Returned
+406,2024-01-03,C012,P014,3,297.57,Mexico,PIX,Processing
+407,2024-11-27,C033,P017,1,209.9,Mexico,PIX,Cancelled
+408,2024-11-18,C008,P018,3,381.85,Peru,Cash,Processing
+409,2024-05-23,C029,P007,4,127.94,Colombia,Credit Card,Delivered
+410,2024-06-06,C037,P013,2,97.22,Argentina,Debit Card,Returned
+411,2024-10-30,C025,P006,1,255.84,Mexico,PayPal,Processing
+412,2024-04-03,C005,P009,4,83.29,Brazil,Debit Card,Returned
+413,2024-02-23,C031,P018,3,420.41,Peru,Debit Card,Cancelled
+414,2024-07-05,C046,P012,3,208.17,Mexico,Cash,Returned
+415,2024-11-17,C012,P014,2,233.73,Colombia,PayPal,Processing
+416,2024-08-25,C040,P003,2,118.53,Argentina,PIX,Returned
+417,2024-07-12,C025,P019,5,499.16,Brazil,Cash,Cancelled
+418,2024-12-10,C020,P020,5,81.92,Peru,PIX,Returned
+419,2024-06-09,C046,P019,4,66.74,Peru,Debit Card,Cancelled
+420,2024-08-30,C045,P010,4,162.46,Chile,Credit Card,Processing
+421,2024-02-20,C034,P017,5,89.24,Mexico,PayPal,Delivered
+422,2024-01-13,C049,P009,4,344.63,Colombia,Credit Card,Cancelled
+423,2024-10-12,C010,P020,5,123.6,Mexico,PIX,Delivered
+424,2024-06-24,C028,P016,2,106.07,Chile,Debit Card,Delivered
+425,2024-06-27,C027,P020,4,460.21,Argentina,Debit Card,Returned
+426,2024-01-13,C021,P010,5,334.14,Argentina,Credit Card,Cancelled
+427,2024-06-26,C012,P001,2,308.38,Brazil,Cash,Returned
+428,2024-09-26,C014,P003,1,383.31,Chile,Cash,Returned
+429,2024-03-17,C001,P007,3,443.09,Brazil,Credit Card,Returned
+430,2024-08-04,C032,P016,4,375.72,Mexico,Credit Card,Returned
+431,2024-04-02,C036,P020,1,259.9,Peru,Cash,Processing
+432,2024-09-20,C002,P019,4,434.48,Mexico,Debit Card,Processing
+433,2024-05-19,C023,P016,3,446.42,Chile,PayPal,Processing
+434,2024-07-10,C031,P003,4,430.52,Mexico,Debit Card,Returned
+435,2024-05-22,C020,P004,5,291.72,Argentina,PayPal,Processing
+436,2024-07-20,C015,P012,4,326.18,Peru,PayPal,Cancelled
+437,2024-09-16,C017,P013,1,407.27,Chile,PayPal,Processing
+438,2024-01-30,C009,P004,3,147.07,Colombia,Debit Card,Cancelled
+439,2024-01-24,C014,P007,1,188.21,Argentina,PIX,Cancelled
+440,2024-06-12,C039,P020,4,150.05,Colombia,Debit Card,Delivered
+441,2024-05-19,C048,P012,5,61.1,Colombia,Debit Card,Delivered
+442,2024-12-19,C013,P007,1,397.69,Argentina,Debit Card,Cancelled
+443,2024-08-13,C009,P005,2,288.12,Argentina,Cash,Cancelled
+444,2024-08-23,C029,P014,4,266.86,Colombia,PayPal,Returned
+445,2024-06-05,C024,P006,2,475.38,Peru,PayPal,Cancelled
+446,2024-03-21,C028,P014,1,185.62,Argentina,PayPal,Returned
+447,2024-12-01,C012,P008,5,465.18,Brazil,PayPal,Returned
+448,2024-10-17,C004,P009,3,265.74,Argentina,Debit Card,Processing
+449,2024-04-01,C007,P015,1,421.33,Brazil,Credit Card,Returned
+450,2024-12-10,C041,P002,1,481.78,Mexico,Debit Card,Delivered
+451,2024-05-20,C012,P017,5,451.56,Mexico,PIX,Delivered
+452,2024-06-21,C019,P019,4,362.85,Brazil,PayPal,Processing
+453,2024-03-21,C012,P004,2,477.03,Chile,Debit Card,Processing
+454,2024-12-04,C008,P012,3,148.18,Peru,PIX,Delivered
+455,2024-08-07,C050,P010,3,494.96,Brazil,Debit Card,Processing
+456,2024-01-03,C034,P018,2,90.08,Argentina,PayPal,Cancelled
+457,2024-06-16,C040,P009,2,185.09,Argentina,Credit Card,Delivered
+458,2024-10-13,C012,P005,4,71.18,Mexico,PayPal,Cancelled
+459,2024-05-07,C024,P001,3,366.3,Argentina,Credit Card,Returned
+460,2024-04-09,C016,P013,1,155.47,Argentina,Credit Card,Processing
+461,2024-01-18,C041,P018,4,23.18,Peru,Debit Card,Delivered
+462,2024-06-07,C044,P002,4,282.1,Peru,PIX,Delivered
+463,2024-05-14,C034,P014,5,261.41,Colombia,Debit Card,Cancelled
+464,2024-04-05,C032,P020,3,360.37,Colombia,Debit Card,Processing
+465,2024-03-08,C010,P013,4,453.23,Mexico,PayPal,Delivered
+466,2024-12-02,C020,P004,1,346.18,Brazil,Cash,Delivered
+467,2024-09-28,C046,P003,5,232.77,Argentina,Debit Card,Returned
+468,2024-05-25,C027,P002,3,277.32,Argentina,Credit Card,Cancelled
+469,2024-02-24,C015,P016,2,361.41,Chile,PayPal,Processing
+470,2024-08-23,C010,P006,2,34.02,Peru,PIX,Cancelled
+471,2024-05-30,C026,P013,4,413.8,Chile,PayPal,Cancelled
+472,2024-03-12,C046,P004,1,89.09,Peru,PIX,Cancelled
+473,2024-07-13,C033,P004,4,58.3,Colombia,Credit Card,Delivered
+474,2024-11-04,C004,P006,1,308.3,Chile,PIX,Delivered
+475,2024-04-28,C047,P004,2,439.36,Colombia,Cash,Delivered
+476,2024-06-09,C045,P008,1,227.78,Chile,Debit Card,Returned
+477,2024-01-16,C044,P010,4,67.06,Peru,Debit Card,Processing
+478,2024-01-11,C022,P018,3,123.58,Chile,Debit Card,Processing
+479,2024-01-23,C007,P012,4,262.76,Peru,Debit Card,Delivered
+480,2024-10-09,C023,P016,1,249.37,Mexico,PayPal,Delivered
+481,2024-08-20,C031,P006,2,379.78,Brazil,Debit Card,Returned
+482,2024-12-13,C047,P013,2,172.24,Brazil,Credit Card,Delivered
+483,2024-10-17,C014,P017,2,329.31,Colombia,Cash,Returned
+484,2024-03-21,C024,P005,5,41.99,Argentina,Credit Card,Delivered
+485,2024-08-07,C025,P012,1,229.13,Mexico,Credit Card,Returned
+486,2024-07-24,C050,P019,5,482.8,Chile,PayPal,Cancelled
+487,2024-06-28,C017,P004,2,268.59,Chile,PIX,Cancelled
+488,2024-03-30,C017,P004,3,345.91,Brazil,Credit Card,Cancelled
+489,2024-10-29,C016,P007,5,244.5,Mexico,Debit Card,Cancelled
+490,2024-11-26,C025,P020,4,122.34,Peru,Debit Card,Cancelled
+491,2024-02-22,C029,P020,1,396.3,Brazil,PayPal,Processing
+492,2024-01-17,C015,P014,3,314.37,Mexico,Credit Card,Returned
+493,2024-02-29,C001,P008,1,235.04,Mexico,Cash,Delivered
+494,2024-11-11,C013,P012,1,428.35,Colombia,PayPal,Processing
+495,2024-05-06,C029,P008,1,435.04,Chile,Debit Card,Delivered
+496,2024-08-19,C030,P016,3,262.9,Chile,PIX,Processing
+497,2024-04-29,C010,P011,4,364.67,Argentina,Debit Card,Returned
+498,2024-04-22,C006,P007,4,267.84,Mexico,Debit Card,Returned
+499,2024-05-14,C023,P016,2,117.01,Peru,Credit Card,Processing
+500,2024-02-19,C003,P015,1,199.12,Argentina,Debit Card,Returned
+501,2024-07-25,C021,P019,1,58.08,Colombia,Cash,Delivered
+502,2024-05-14,C015,P013,2,174.81,Peru,Credit Card,Delivered
+503,2024-10-01,C019,P007,4,38.07,Brazil,PayPal,Processing
+504,2024-09-24,C023,P002,3,441.4,Peru,PIX,Delivered
+505,2024-04-14,C017,P006,1,380.06,Brazil,PayPal,Processing
+506,2024-12-23,C009,P009,1,478.78,Brazil,Debit Card,Processing
+507,2024-06-20,C003,P012,5,100.62,Mexico,Debit Card,Delivered
+508,2024-06-30,C021,P017,2,470.17,Chile,Credit Card,Cancelled
+509,2024-10-20,C004,P020,4,87.5,Colombia,PIX,Delivered
+510,2024-06-17,C031,P003,4,259.4,Colombia,PayPal,Processing
+511,2024-12-26,C027,P006,1,390.69,Peru,Debit Card,Cancelled
+512,2024-08-04,C012,P013,5,99.87,Chile,PayPal,Processing
+513,2024-11-25,C001,P020,2,307.59,Chile,PIX,Returned
+514,2024-08-15,C037,P010,4,145.06,Brazil,Credit Card,Processing
+515,2024-10-22,C017,P002,2,408.94,Colombia,PIX,Returned
+516,2024-02-18,C002,P017,3,262.67,Mexico,PayPal,Processing
+517,2024-03-09,C019,P006,4,325.32,Colombia,Debit Card,Processing
+518,2024-02-09,C001,P002,3,376.14,Colombia,PIX,Cancelled
+519,2024-02-20,C019,P019,4,447.1,Peru,PIX,Processing
+520,2024-04-27,C024,P018,1,393.13,Argentina,PIX,Cancelled
+521,2024-03-29,C022,P014,1,321.71,Peru,Debit Card,Returned
+522,2024-03-20,C019,P007,1,101.15,Brazil,Debit Card,Returned
+523,2024-09-16,C042,P004,5,491.34,Brazil,PIX,Cancelled
+524,2024-12-28,C016,P005,4,453.36,Brazil,Credit Card,Delivered
+525,2024-04-12,C048,P015,1,345.76,Argentina,Credit Card,Delivered
+526,2024-09-26,C015,P019,4,189.08,Colombia,Credit Card,Returned
+527,2024-07-26,C027,P009,3,75.3,Chile,PayPal,Cancelled
+528,2024-10-07,C018,P019,3,19.51,Colombia,PIX,Cancelled
+529,2024-06-15,C030,P002,5,34.92,Peru,PayPal,Delivered
+530,2024-12-26,C021,P019,4,24.61,Colombia,PayPal,Cancelled
+531,2024-10-17,C020,P006,2,210.28,Peru,PIX,Returned
+532,2024-03-24,C026,P017,3,104.16,Argentina,Credit Card,Returned
+533,2024-04-26,C044,P019,3,143.73,Colombia,Debit Card,Delivered
+534,2024-12-15,C011,P019,3,206.12,Colombia,Debit Card,Cancelled
+535,2024-01-11,C008,P003,4,451.95,Chile,PIX,Cancelled
+536,2024-08-26,C026,P016,5,291.76,Mexico,Debit Card,Cancelled
+537,2024-10-20,C013,P020,1,323.13,Chile,PIX,Delivered
+538,2024-01-31,C003,P015,1,119.87,Peru,Credit Card,Returned
+539,2024-12-22,C009,P018,3,264.95,Mexico,PayPal,Cancelled
+540,2024-12-25,C023,P012,5,499.79,Colombia,Credit Card,Returned
+541,2024-10-04,C021,P017,4,468.43,Colombia,Credit Card,Cancelled
+542,2024-07-03,C021,P015,1,113.8,Colombia,Debit Card,Delivered
+543,2024-04-08,C018,P006,4,48.49,Brazil,Cash,Returned
+544,2024-04-11,C007,P001,4,226.06,Argentina,Credit Card,Cancelled
+545,2024-12-21,C013,P018,4,93.04,Brazil,Cash,Processing
+546,2024-09-27,C035,P003,2,255.01,Mexico,Debit Card,Cancelled
+547,2024-12-11,C037,P012,1,328.44,Peru,Cash,Cancelled
+548,2024-04-10,C046,P006,3,425.84,Brazil,Debit Card,Cancelled
+549,2024-01-01,C045,P012,4,286.09,Chile,PayPal,Processing
+550,2024-04-24,C041,P018,1,262.54,Colombia,Cash,Processing
+551,2024-01-03,C019,P017,3,68.38,Colombia,PIX,Processing
+552,2024-07-30,C039,P014,5,332.01,Brazil,Credit Card,Returned
+553,2024-09-22,C038,P020,1,38.64,Argentina,PIX,Returned
+554,2024-07-08,C049,P002,1,156.47,Chile,Debit Card,Cancelled
+555,2024-01-05,C033,P009,5,428.85,Chile,PIX,Delivered
+556,2024-09-26,C018,P003,3,17.7,Argentina,Credit Card,Delivered
+557,2024-06-23,C024,P008,4,142.56,Brazil,Debit Card,Processing
+558,2024-09-02,C002,P006,1,30.92,Mexico,Credit Card,Delivered
+559,2024-01-01,C034,P009,4,247.29,Colombia,PayPal,Processing
+560,2024-04-26,C002,P010,4,221.86,Argentina,PIX,Delivered
+561,2024-09-18,C008,P009,2,456.0,Brazil,Credit Card,Processing
+562,2024-07-23,C013,P001,5,289.8,Peru,Cash,Cancelled
+563,2024-06-10,C021,P011,5,425.25,Colombia,PayPal,Delivered
+564,2024-09-19,C027,P010,3,214.73,Mexico,Credit Card,Delivered
+565,2024-10-07,C008,P008,2,446.47,Peru,Debit Card,Delivered
+566,2024-01-27,C032,P001,2,266.43,Colombia,Debit Card,Delivered
+567,2024-03-27,C025,P019,1,286.15,Brazil,Credit Card,Returned
+568,2024-09-03,C009,P005,4,411.76,Mexico,PIX,Cancelled
+569,2024-11-25,C038,P006,3,76.9,Mexico,PIX,Cancelled
+570,2024-06-18,C018,P015,1,394.72,Argentina,PayPal,Returned
+571,2024-04-09,C031,P005,4,204.09,Argentina,Credit Card,Cancelled
+572,2024-12-11,C009,P020,2,466.96,Chile,Cash,Processing
+573,2024-02-24,C009,P010,3,64.16,Colombia,Debit Card,Returned
+574,2024-08-25,C016,P017,2,414.79,Mexico,PayPal,Delivered
+575,2024-02-28,C043,P016,1,406.32,Chile,Debit Card,Delivered
+576,2024-02-14,C027,P010,1,284.0,Mexico,PayPal,Delivered
+577,2024-11-16,C025,P005,3,354.58,Chile,PayPal,Returned
+578,2024-07-19,C032,P002,4,10.14,Brazil,PayPal,Returned
+579,2024-12-23,C033,P014,2,145.19,Argentina,Debit Card,Delivered
+580,2024-03-06,C033,P001,4,30.19,Argentina,Cash,Cancelled
+581,2024-09-10,C029,P014,2,154.37,Mexico,Credit Card,Delivered
+582,2024-07-04,C002,P014,1,440.51,Colombia,PayPal,Delivered
+583,2024-01-11,C013,P003,2,32.41,Mexico,PayPal,Delivered
+584,2024-09-20,C041,P009,3,333.8,Chile,PayPal,Cancelled
+585,2024-01-25,C013,P015,1,368.25,Colombia,Debit Card,Processing
+586,2024-01-27,C011,P009,2,478.39,Argentina,Credit Card,Returned
+587,2024-03-27,C028,P009,1,179.5,Chile,Credit Card,Processing
+588,2024-07-03,C005,P015,4,454.68,Colombia,Cash,Cancelled
+589,2024-08-05,C008,P015,5,248.15,Chile,Credit Card,Delivered
+590,2024-05-12,C025,P007,2,328.55,Argentina,Cash,Returned
+591,2024-10-30,C026,P006,4,84.67,Argentina,PayPal,Returned
+592,2024-11-22,C029,P017,2,408.3,Peru,Cash,Cancelled
+593,2024-11-22,C014,P011,1,208.05,Chile,PayPal,Delivered
+594,2024-08-04,C009,P013,1,20.81,Mexico,PayPal,Cancelled
+595,2024-02-06,C034,P001,5,111.0,Brazil,Credit Card,Cancelled
+596,2024-09-28,C045,P010,4,165.69,Colombia,Cash,Delivered
+597,2024-12-26,C031,P002,4,288.09,Brazil,Credit Card,Returned
+598,2024-07-14,C045,P004,2,213.93,Colombia,PayPal,Returned
+599,2024-06-04,C005,P013,1,485.71,Colombia,Debit Card,Processing
+600,2024-08-09,C013,P018,1,155.04,Colombia,Cash,Cancelled
+601,2024-10-25,C021,P010,5,269.63,Mexico,Cash,Processing
+602,2024-01-03,C025,P007,1,355.58,Peru,PayPal,Returned
+603,2024-01-18,C044,P015,4,472.04,Mexico,Cash,Processing
+604,2024-06-13,C034,P013,2,446.98,Argentina,Credit Card,Cancelled
+605,2024-10-01,C018,P007,4,425.36,Brazil,PayPal,Processing
+606,2024-09-26,C021,P001,4,114.88,Mexico,PIX,Returned
+607,2024-10-30,C010,P017,5,30.12,Chile,PayPal,Cancelled
+608,2024-09-27,C005,P011,5,447.15,Mexico,Credit Card,Cancelled
+609,2024-11-20,C015,P019,5,483.37,Chile,PIX,Delivered
+610,2024-05-25,C024,P010,3,498.05,Brazil,Credit Card,Returned
+611,2024-07-24,C010,P011,2,200.09,Brazil,Debit Card,Returned
+612,2024-07-03,C033,P006,2,274.88,Peru,Cash,Delivered
+613,2024-01-05,C032,P013,3,208.8,Mexico,PIX,Returned
+614,2024-07-28,C038,P014,1,169.11,Chile,Credit Card,Returned
+615,2024-06-16,C010,P012,2,231.39,Mexico,Credit Card,Cancelled
+616,2024-09-30,C018,P003,4,67.13,Colombia,Credit Card,Processing
+617,2024-11-02,C018,P006,1,288.31,Brazil,Cash,Returned
+618,2024-06-27,C024,P007,1,270.07,Brazil,Credit Card,Returned
+619,2024-05-16,C032,P009,2,261.75,Chile,PayPal,Processing
+620,2024-10-29,C049,P018,1,281.12,Colombia,Cash,Cancelled
+621,2024-06-29,C045,P020,4,86.43,Peru,PayPal,Processing
+622,2024-07-02,C013,P002,3,283.18,Brazil,Debit Card,Cancelled
+623,2024-09-24,C023,P010,1,358.22,Argentina,PayPal,Delivered
+624,2024-10-02,C028,P013,3,466.71,Peru,Credit Card,Returned
+625,2024-05-06,C037,P006,2,307.57,Colombia,Debit Card,Processing
+626,2024-08-22,C050,P015,2,304.92,Chile,PIX,Returned
+627,2024-07-13,C015,P014,5,443.49,Brazil,Debit Card,Cancelled
+628,2024-04-11,C047,P015,4,100.95,Chile,PIX,Delivered
+629,2024-12-27,C036,P001,1,390.85,Peru,Credit Card,Cancelled
+630,2024-07-20,C021,P009,1,497.41,Mexico,Credit Card,Delivered
+631,2024-08-20,C010,P019,2,62.71,Chile,PayPal,Returned
+632,2024-12-11,C037,P010,5,130.52,Brazil,Debit Card,Processing
+633,2024-07-15,C018,P008,4,331.9,Brazil,PayPal,Cancelled
+634,2024-08-25,C001,P009,5,127.7,Brazil,PayPal,Processing
+635,2024-04-24,C002,P005,1,86.93,Peru,Debit Card,Returned
+636,2024-12-15,C031,P003,4,465.13,Mexico,Credit Card,Delivered
+637,2024-07-26,C049,P005,3,195.39,Argentina,PIX,Cancelled
+638,2024-03-30,C003,P001,5,235.36,Mexico,PayPal,Cancelled
+639,2024-03-18,C016,P006,3,172.58,Peru,Debit Card,Cancelled
+640,2024-08-21,C037,P008,1,82.59,Colombia,Credit Card,Returned
+641,2024-08-29,C025,P005,3,55.76,Peru,Debit Card,Cancelled
+642,2024-05-30,C034,P009,2,473.25,Mexico,PayPal,Cancelled
+643,2024-01-08,C021,P014,4,450.92,Brazil,Debit Card,Returned
+644,2024-06-10,C048,P020,5,167.18,Chile,PayPal,Returned
+645,2024-06-06,C015,P015,3,214.96,Peru,Debit Card,Cancelled
+646,2024-11-17,C012,P013,2,146.96,Mexico,Debit Card,Cancelled
+647,2024-07-04,C041,P005,4,245.62,Mexico,Debit Card,Processing
+648,2024-11-23,C030,P016,3,236.55,Mexico,Cash,Processing
+649,2024-12-28,C014,P011,4,368.18,Mexico,Cash,Delivered
+650,2024-12-27,C045,P002,3,404.12,Argentina,Debit Card,Delivered
+651,2024-11-27,C033,P002,3,181.69,Colombia,PIX,Delivered
+652,2024-06-05,C043,P009,3,210.81,Chile,PIX,Returned
+653,2024-12-10,C032,P004,2,191.92,Brazil,PIX,Delivered
+654,2024-07-11,C004,P020,5,46.83,Argentina,Debit Card,Processing
+655,2024-10-11,C027,P009,5,248.69,Colombia,Credit Card,Returned
+656,2024-05-23,C032,P004,2,82.88,Brazil,Credit Card,Returned
+657,2024-08-18,C009,P010,4,243.03,Peru,Credit Card,Processing
+658,2024-05-29,C004,P018,1,16.23,Chile,Debit Card,Cancelled
+659,2024-12-25,C040,P012,5,123.06,Brazil,Cash,Delivered
+660,2024-04-17,C039,P019,2,323.21,Brazil,Debit Card,Cancelled
+661,2024-09-26,C005,P020,1,75.94,Colombia,PIX,Processing
+662,2024-11-23,C050,P003,4,392.58,Peru,Credit Card,Delivered
+663,2024-02-04,C017,P017,3,73.97,Brazil,Cash,Returned
+664,2024-01-02,C041,P009,4,473.54,Colombia,PIX,Cancelled
+665,2024-09-06,C011,P001,3,156.88,Colombia,PayPal,Cancelled
+666,2024-03-23,C016,P015,2,87.19,Colombia,Debit Card,Processing
+667,2024-10-25,C023,P006,1,79.32,Mexico,PayPal,Delivered
+668,2024-02-19,C030,P020,4,481.42,Peru,Cash,Returned
+669,2024-11-15,C001,P020,4,394.11,Colombia,Cash,Delivered
+670,2024-08-14,C011,P012,5,137.32,Argentina,Credit Card,Delivered
+671,2024-03-08,C024,P012,2,285.11,Peru,Credit Card,Processing
+672,2024-03-12,C017,P004,2,98.62,Brazil,Debit Card,Processing
+673,2024-10-19,C014,P014,1,94.06,Peru,PayPal,Returned
+674,2024-12-14,C021,P009,3,372.56,Mexico,PIX,Processing
+675,2024-08-04,C033,P018,5,184.08,Brazil,Cash,Cancelled
+676,2024-04-16,C011,P006,2,25.11,Chile,Debit Card,Cancelled
+677,2024-09-03,C043,P011,2,217.77,Mexico,PIX,Delivered
+678,2024-02-15,C007,P001,5,449.45,Brazil,Debit Card,Cancelled
+679,2024-07-31,C001,P019,5,379.38,Chile,Credit Card,Returned
+680,2024-07-09,C049,P008,3,237.42,Peru,PayPal,Cancelled
+681,2024-08-22,C027,P010,1,33.53,Peru,PIX,Processing
+682,2024-05-30,C026,P014,4,388.65,Peru,PIX,Processing
+683,2024-09-21,C015,P009,5,212.84,Chile,PIX,Returned
+684,2024-07-02,C041,P014,2,11.53,Colombia,Debit Card,Processing
+685,2024-05-15,C024,P020,2,110.73,Colombia,Debit Card,Cancelled
+686,2024-07-04,C044,P020,5,318.01,Colombia,Credit Card,Cancelled
+687,2024-10-04,C029,P003,1,425.13,Colombia,PIX,Delivered
+688,2024-01-21,C033,P017,4,264.88,Colombia,Debit Card,Returned
+689,2024-06-30,C034,P003,2,146.59,Brazil,PIX,Delivered
+690,2024-03-30,C021,P005,4,372.82,Peru,PIX,Processing
+691,2024-10-08,C048,P001,2,288.39,Brazil,PIX,Delivered
+692,2024-11-22,C034,P005,4,60.63,Chile,PIX,Delivered
+693,2024-07-23,C015,P018,4,145.47,Mexico,Cash,Cancelled
+694,2024-06-19,C038,P014,1,250.59,Chile,Cash,Returned
+695,2024-05-12,C015,P010,3,164.72,Mexico,Credit Card,Cancelled
+696,2024-02-16,C038,P014,3,489.43,Brazil,Cash,Returned
+697,2024-08-26,C040,P017,2,374.04,Brazil,PayPal,Returned
+698,2024-04-08,C011,P019,1,478.31,Argentina,Credit Card,Returned
+699,2024-01-26,C010,P005,5,399.27,Chile,Cash,Processing
+700,2024-06-08,C037,P018,2,499.09,Peru,Debit Card,Cancelled
+701,2024-11-23,C048,P017,3,141.57,Mexico,Cash,Delivered
+702,2024-06-12,C010,P009,3,97.91,Mexico,PayPal,Cancelled
+703,2024-01-22,C008,P017,1,406.91,Mexico,Credit Card,Cancelled
+704,2024-09-30,C016,P006,1,101.22,Brazil,Cash,Returned
+705,2024-02-27,C008,P003,5,22.59,Argentina,Cash,Cancelled
+706,2024-04-03,C050,P009,5,96.16,Argentina,Cash,Returned
+707,2024-11-16,C012,P009,3,389.87,Argentina,Credit Card,Delivered
+708,2024-01-25,C013,P015,1,214.07,Peru,PayPal,Returned
+709,2024-12-30,C043,P007,1,353.43,Brazil,Debit Card,Processing
+710,2024-03-08,C031,P004,3,44.23,Chile,Credit Card,Returned
+711,2024-05-09,C047,P012,5,446.91,Mexico,Credit Card,Processing
+712,2024-01-10,C045,P011,5,463.12,Colombia,Debit Card,Cancelled
+713,2024-05-30,C001,P019,1,413.67,Mexico,Cash,Processing
+714,2024-08-02,C024,P009,4,444.27,Argentina,Cash,Delivered
+715,2024-02-22,C023,P018,2,154.12,Colombia,PIX,Cancelled
+716,2024-02-18,C001,P020,3,55.31,Argentina,Debit Card,Cancelled
+717,2024-12-17,C003,P004,2,293.67,Mexico,PayPal,Cancelled
+718,2024-11-11,C014,P019,5,152.09,Brazil,Credit Card,Cancelled
+719,2024-03-15,C033,P017,1,272.8,Mexico,PayPal,Cancelled
+720,2024-08-12,C027,P007,2,159.77,Chile,PayPal,Returned
+721,2024-04-02,C013,P005,4,452.66,Brazil,Credit Card,Cancelled
+722,2024-07-19,C012,P007,2,323.42,Colombia,PIX,Delivered
+723,2024-05-08,C042,P009,3,86.91,Mexico,Cash,Delivered
+724,2024-03-17,C010,P010,2,338.83,Peru,PayPal,Returned
+725,2024-07-20,C033,P019,5,476.69,Peru,Credit Card,Delivered
+726,2024-10-13,C003,P010,1,415.88,Chile,Cash,Processing
+727,2024-02-23,C013,P020,4,499.7,Colombia,Cash,Processing
+728,2024-03-16,C030,P001,5,131.55,Brazil,PIX,Cancelled
+729,2024-11-29,C032,P015,2,49.63,Colombia,Debit Card,Cancelled
+730,2024-03-19,C045,P008,2,473.6,Argentina,Credit Card,Delivered
+731,2024-07-05,C047,P014,3,390.73,Chile,Cash,Delivered
+732,2024-12-01,C001,P003,5,164.72,Argentina,Cash,Cancelled
+733,2024-11-28,C044,P006,4,263.95,Brazil,Debit Card,Delivered
+734,2024-10-19,C039,P005,3,475.31,Mexico,Credit Card,Processing
+735,2024-02-23,C020,P015,4,38.71,Argentina,Credit Card,Delivered
+736,2024-08-20,C026,P017,2,332.31,Chile,Debit Card,Cancelled
+737,2024-04-02,C031,P010,3,321.09,Peru,Debit Card,Processing
+738,2024-02-06,C006,P007,2,120.0,Peru,Debit Card,Returned
+739,2024-02-12,C010,P007,1,417.54,Colombia,PayPal,Processing
+740,2024-04-24,C037,P007,3,499.96,Mexico,Cash,Processing
+741,2024-05-19,C036,P012,3,461.27,Argentina,Credit Card,Cancelled
+742,2024-05-09,C020,P001,4,308.65,Brazil,PIX,Cancelled
+743,2024-11-12,C031,P005,4,234.2,Peru,Debit Card,Processing
+744,2024-03-18,C026,P003,3,404.78,Brazil,PayPal,Processing
+745,2024-08-22,C025,P015,4,122.33,Chile,PIX,Processing
+746,2024-03-19,C042,P001,3,225.64,Colombia,PIX,Returned
+747,2024-07-25,C005,P007,5,13.75,Argentina,Credit Card,Returned
+748,2024-01-01,C001,P008,5,139.63,Mexico,Credit Card,Returned
+749,2024-09-06,C030,P014,3,230.03,Brazil,Debit Card,Cancelled
+750,2024-10-26,C015,P004,1,142.5,Brazil,Debit Card,Returned
+751,2024-07-31,C041,P008,4,53.79,Brazil,Credit Card,Delivered
+752,2024-10-03,C002,P005,5,234.3,Argentina,Credit Card,Processing
+753,2024-11-03,C008,P009,4,84.92,Argentina,Debit Card,Returned
+754,2024-03-21,C022,P005,3,353.61,Colombia,PayPal,Processing
+755,2024-04-06,C001,P004,2,389.67,Colombia,PIX,Returned
+756,2024-07-11,C005,P020,3,209.44,Chile,PIX,Returned
+757,2024-03-22,C032,P017,2,34.58,Argentina,Cash,Cancelled
+758,2024-06-12,C049,P004,2,122.18,Chile,Cash,Returned
+759,2024-08-02,C028,P014,3,169.15,Chile,PIX,Processing
+760,2024-11-08,C031,P013,5,374.47,Brazil,PayPal,Cancelled
+761,2024-10-25,C011,P020,3,463.84,Chile,Debit Card,Cancelled
+762,2024-01-31,C024,P007,1,271.24,Brazil,Debit Card,Processing
+763,2024-04-28,C036,P014,3,392.16,Colombia,Debit Card,Processing
+764,2024-03-21,C005,P002,1,184.16,Chile,Cash,Delivered
+765,2024-02-26,C017,P011,4,499.91,Chile,Cash,Returned
+766,2024-11-20,C034,P005,3,486.3,Colombia,Credit Card,Delivered
+767,2024-03-25,C032,P013,4,276.7,Peru,PayPal,Processing
+768,2024-11-08,C019,P004,1,126.14,Brazil,Debit Card,Returned
+769,2024-11-15,C001,P009,3,370.6,Brazil,Debit Card,Processing
+770,2024-03-06,C002,P007,3,428.94,Argentina,PayPal,Returned
+771,2024-02-19,C032,P007,3,336.74,Mexico,Debit Card,Cancelled
+772,2024-01-07,C043,P020,5,225.22,Chile,Credit Card,Delivered
+773,2024-02-14,C029,P011,4,402.26,Peru,Cash,Processing
+774,2024-09-29,C009,P007,4,268.33,Mexico,Debit Card,Processing
+775,2024-11-11,C037,P020,3,163.24,Colombia,Credit Card,Processing
+776,2024-09-05,C022,P003,1,316.04,Peru,PayPal,Returned
+777,2024-12-14,C004,P011,4,437.39,Peru,PayPal,Cancelled
+778,2024-06-25,C031,P007,5,427.13,Brazil,Cash,Returned
+779,2024-10-09,C045,P016,2,408.98,Colombia,Credit Card,Cancelled
+780,2024-07-10,C039,P013,3,160.09,Brazil,Credit Card,Delivered
+781,2024-09-10,C043,P019,2,240.16,Argentina,PIX,Delivered
+782,2024-09-11,C050,P007,2,300.85,Peru,PayPal,Delivered
+783,2024-01-17,C044,P008,5,122.97,Brazil,Debit Card,Processing
+784,2024-04-14,C013,P019,5,461.72,Mexico,Debit Card,Processing
+785,2024-10-03,C006,P008,5,295.85,Peru,Debit Card,Processing
+786,2024-02-20,C014,P004,5,185.71,Argentina,Debit Card,Cancelled
+787,2024-05-31,C016,P009,5,272.45,Peru,PayPal,Delivered
+788,2024-07-26,C025,P020,1,71.89,Argentina,Debit Card,Returned
+789,2024-03-27,C043,P013,1,292.54,Colombia,PayPal,Returned
+790,2024-09-26,C002,P006,5,21.17,Colombia,PIX,Delivered
+791,2024-10-11,C010,P009,3,355.2,Colombia,PIX,Returned
+792,2024-03-18,C009,P014,4,471.34,Brazil,Credit Card,Cancelled
+793,2024-04-21,C031,P010,1,359.25,Colombia,PIX,Processing
+794,2024-03-03,C035,P019,1,162.54,Chile,PayPal,Returned
+795,2024-10-11,C010,P009,1,57.62,Chile,PIX,Returned
+796,2024-09-18,C036,P010,5,292.79,Mexico,Cash,Cancelled
+797,2024-05-09,C047,P006,3,56.25,Brazil,PIX,Delivered
+798,2024-12-30,C007,P011,3,399.51,Colombia,Credit Card,Delivered
+799,2024-04-08,C008,P014,1,410.98,Argentina,Credit Card,Processing
+800,2024-05-01,C049,P015,5,74.99,Brazil,Cash,Processing
+801,2024-02-20,C005,P009,4,124.02,Mexico,Credit Card,Processing
+802,2024-03-19,C043,P013,2,87.3,Colombia,Debit Card,Cancelled
+803,2024-02-16,C031,P010,1,324.85,Chile,PayPal,Processing
+804,2024-07-07,C009,P007,1,494.33,Chile,Cash,Processing
+805,2024-05-22,C038,P020,2,238.36,Brazil,PIX,Delivered
+806,2024-10-11,C013,P004,5,491.6,Brazil,Debit Card,Cancelled
+807,2024-12-18,C003,P013,4,360.85,Mexico,Cash,Delivered
+808,2024-10-30,C038,P006,4,378.95,Brazil,PayPal,Delivered
+809,2024-04-26,C007,P011,5,295.78,Colombia,Debit Card,Delivered
+810,2024-03-03,C047,P012,4,283.21,Brazil,Credit Card,Processing
+811,2024-12-17,C045,P013,3,480.88,Mexico,Cash,Returned
+812,2024-02-29,C033,P005,3,346.32,Argentina,PIX,Processing
+813,2024-07-13,C045,P008,4,141.17,Mexico,PayPal,Processing
+814,2024-01-03,C008,P018,1,377.85,Colombia,Debit Card,Delivered
+815,2024-01-28,C018,P010,4,420.97,Argentina,Cash,Processing
+816,2024-02-23,C002,P017,3,306.58,Chile,Debit Card,Delivered
+817,2024-06-04,C017,P010,1,305.4,Brazil,Cash,Cancelled
+818,2024-08-28,C013,P001,4,422.5,Argentina,Credit Card,Delivered
+819,2024-01-21,C017,P005,2,410.86,Argentina,PayPal,Cancelled
+820,2024-10-28,C035,P014,2,24.27,Chile,Credit Card,Delivered
+821,2024-07-26,C020,P010,1,455.29,Mexico,Cash,Cancelled
+822,2024-08-31,C030,P003,5,490.09,Colombia,PayPal,Cancelled
+823,2024-11-02,C047,P009,2,149.13,Colombia,PayPal,Delivered
+824,2024-09-15,C049,P014,1,376.13,Mexico,PIX,Processing
+825,2024-01-23,C008,P003,3,436.59,Peru,PayPal,Cancelled
+826,2024-08-27,C049,P003,2,422.74,Mexico,Credit Card,Delivered
+827,2024-07-08,C040,P015,1,168.08,Peru,Credit Card,Cancelled
+828,2024-08-10,C050,P019,5,415.07,Mexico,PayPal,Returned
+829,2024-07-23,C018,P015,2,203.34,Mexico,PayPal,Processing
+830,2024-04-10,C027,P015,1,491.87,Mexico,Debit Card,Delivered
+831,2024-06-03,C027,P013,4,249.44,Brazil,PayPal,Processing
+832,2024-08-25,C023,P004,5,50.44,Brazil,Credit Card,Returned
+833,2024-12-14,C028,P014,3,255.61,Chile,Cash,Returned
+834,2024-01-03,C006,P009,2,168.45,Colombia,Debit Card,Returned
+835,2024-09-12,C024,P007,4,201.56,Colombia,PIX,Delivered
+836,2024-09-08,C017,P010,5,154.77,Argentina,PIX,Delivered
+837,2024-12-25,C019,P017,5,241.36,Argentina,PIX,Cancelled
+838,2024-08-28,C011,P001,1,449.06,Peru,PIX,Returned
+839,2024-02-15,C023,P009,1,214.11,Brazil,Cash,Returned
+840,2024-03-03,C003,P003,3,81.45,Mexico,Debit Card,Cancelled
+841,2024-04-17,C012,P017,3,32.39,Peru,Debit Card,Delivered
+842,2024-03-10,C030,P003,1,263.3,Mexico,Cash,Returned
+843,2024-03-11,C032,P013,3,319.1,Peru,Cash,Cancelled
+844,2024-04-16,C030,P018,2,481.43,Brazil,PIX,Cancelled
+845,2024-06-18,C001,P016,3,15.38,Mexico,Cash,Delivered
+846,2024-01-10,C024,P013,5,178.44,Peru,PIX,Returned
+847,2024-09-21,C047,P003,4,138.12,Chile,Debit Card,Processing
+848,2024-06-28,C001,P012,1,468.1,Brazil,Debit Card,Delivered
+849,2024-08-14,C013,P004,2,459.64,Peru,Cash,Cancelled
+850,2024-08-30,C046,P017,3,333.7,Argentina,PIX,Cancelled
+851,2024-03-13,C033,P019,2,69.11,Brazil,Credit Card,Cancelled
+852,2024-10-15,C017,P001,1,336.6,Chile,Credit Card,Processing
+853,2024-08-23,C046,P009,1,468.48,Mexico,Cash,Processing
+854,2024-03-24,C017,P020,2,155.35,Argentina,Cash,Cancelled
+855,2024-03-23,C001,P002,5,438.15,Colombia,PayPal,Delivered
+856,2024-11-30,C031,P001,1,481.58,Argentina,Debit Card,Cancelled
+857,2024-01-22,C019,P004,2,27.91,Brazil,Debit Card,Returned
+858,2024-07-08,C016,P015,5,95.5,Argentina,Credit Card,Processing
+859,2024-10-24,C029,P009,4,344.19,Chile,Debit Card,Cancelled
+860,2024-05-30,C024,P007,2,351.17,Peru,Credit Card,Cancelled
+861,2024-09-26,C040,P004,4,89.98,Brazil,PIX,Delivered
+862,2024-01-02,C050,P016,4,309.61,Argentina,Debit Card,Delivered
+863,2024-05-05,C050,P008,3,40.57,Peru,Credit Card,Cancelled
+864,2024-09-25,C039,P005,1,349.69,Brazil,PayPal,Delivered
+865,2024-04-27,C031,P017,1,320.77,Colombia,Credit Card,Cancelled
+866,2024-01-11,C025,P018,3,306.28,Peru,Credit Card,Cancelled
+867,2024-02-24,C049,P003,3,360.5,Mexico,Debit Card,Delivered
+868,2024-04-17,C021,P015,5,140.31,Chile,Credit Card,Processing
+869,2024-04-09,C030,P018,5,205.51,Colombia,PayPal,Delivered
+870,2024-11-08,C046,P005,3,57.43,Peru,Debit Card,Returned
+871,2024-12-19,C004,P012,5,343.08,Colombia,Credit Card,Cancelled
+872,2024-11-08,C022,P004,2,291.18,Brazil,Debit Card,Cancelled
+873,2024-11-04,C011,P008,3,319.91,Chile,PayPal,Returned
+874,2024-11-22,C013,P001,1,420.52,Mexico,PayPal,Processing
+875,2024-08-28,C048,P017,4,456.8,Colombia,Debit Card,Processing
+876,2024-02-11,C033,P004,5,91.14,Argentina,Debit Card,Returned
+877,2024-05-26,C025,P008,5,336.16,Chile,Debit Card,Returned
+878,2024-04-13,C036,P014,3,89.32,Colombia,Debit Card,Processing
+879,2024-08-10,C007,P002,1,388.55,Argentina,Debit Card,Delivered
+880,2024-02-23,C026,P008,3,439.29,Mexico,Cash,Processing
+881,2024-05-03,C015,P006,2,253.53,Chile,Debit Card,Cancelled
+882,2024-04-12,C013,P018,5,498.82,Chile,Credit Card,Cancelled
+883,2024-12-10,C024,P003,2,302.82,Brazil,Credit Card,Processing
+884,2024-02-15,C017,P010,4,203.67,Chile,PIX,Returned
+885,2024-06-04,C047,P005,2,391.21,Mexico,PayPal,Delivered
+886,2024-12-29,C042,P007,4,100.86,Colombia,Credit Card,Processing
+887,2024-10-30,C006,P017,1,305.0,Argentina,Cash,Delivered
+888,2024-01-28,C004,P008,3,281.55,Mexico,PIX,Processing
+889,2024-02-12,C045,P020,2,371.19,Brazil,Debit Card,Returned
+890,2024-05-26,C023,P006,5,471.73,Mexico,PIX,Delivered
+891,2024-08-19,C006,P004,2,204.46,Chile,Credit Card,Cancelled
+892,2024-10-01,C003,P010,4,125.61,Brazil,Debit Card,Cancelled
+893,2024-09-21,C032,P018,4,414.14,Colombia,PayPal,Processing
+894,2024-02-04,C047,P015,2,95.16,Peru,PayPal,Cancelled
+895,2024-02-07,C011,P017,3,155.57,Brazil,Credit Card,Processing
+896,2024-12-15,C045,P020,1,387.66,Chile,Debit Card,Returned
+897,2024-01-30,C019,P020,5,187.1,Peru,PIX,Delivered
+898,2024-01-11,C025,P019,1,55.26,Brazil,Debit Card,Processing
+899,2024-11-06,C006,P004,4,384.1,Colombia,Credit Card,Cancelled
+900,2024-09-23,C020,P008,2,330.01,Peru,PayPal,Processing
+901,2024-04-24,C050,P005,5,217.3,Brazil,PIX,Returned
+902,2024-10-24,C031,P015,4,63.43,Mexico,Credit Card,Cancelled
+903,2024-10-21,C007,P015,2,386.95,Brazil,PIX,Returned
+904,2024-09-06,C001,P017,4,319.38,Peru,Debit Card,Returned
+905,2024-11-12,C023,P010,2,369.66,Chile,Debit Card,Delivered
+906,2024-07-09,C049,P006,3,161.32,Brazil,PIX,Cancelled
+907,2024-09-18,C035,P004,4,244.94,Brazil,Credit Card,Delivered
+908,2024-03-23,C023,P008,3,261.66,Argentina,PIX,Cancelled
+909,2024-04-29,C008,P007,2,338.74,Brazil,Cash,Processing
+910,2024-11-14,C039,P012,1,452.3,Brazil,PIX,Returned
+911,2024-07-15,C003,P014,4,230.05,Chile,PayPal,Returned
+912,2024-07-15,C048,P006,2,481.33,Brazil,PIX,Cancelled
+913,2024-07-01,C033,P010,3,422.27,Mexico,PayPal,Cancelled
+914,2024-04-27,C038,P018,5,466.45,Brazil,Credit Card,Processing
+915,2024-01-22,C033,P006,1,494.88,Chile,Debit Card,Processing
+916,2024-07-25,C034,P009,1,200.55,Chile,PIX,Processing
+917,2024-11-20,C046,P018,1,89.84,Brazil,PayPal,Returned
+918,2024-05-22,C029,P010,4,250.77,Argentina,Cash,Returned
+919,2024-02-27,C017,P008,4,340.19,Argentina,Debit Card,Cancelled
+920,2024-01-09,C022,P015,2,131.26,Chile,Credit Card,Cancelled
+921,2024-05-27,C008,P013,4,70.61,Mexico,Debit Card,Returned
+922,2024-05-02,C031,P001,1,244.1,Chile,PayPal,Processing
+923,2024-01-19,C032,P020,2,110.92,Brazil,Debit Card,Cancelled
+924,2024-02-02,C015,P017,2,360.61,Argentina,Debit Card,Delivered
+925,2024-10-28,C013,P002,3,253.28,Mexico,Cash,Processing
+926,2024-10-08,C036,P012,3,127.17,Chile,Cash,Cancelled
+927,2024-08-16,C001,P009,3,360.72,Chile,PIX,Delivered
+928,2024-12-23,C044,P007,2,422.93,Chile,PIX,Delivered
+929,2024-05-05,C003,P005,5,23.62,Peru,PIX,Cancelled
+930,2024-08-28,C009,P004,4,80.25,Chile,Debit Card,Delivered
+931,2024-04-10,C028,P019,4,58.64,Chile,PayPal,Cancelled
+932,2024-01-03,C006,P016,1,448.19,Colombia,Cash,Processing
+933,2024-11-21,C018,P007,3,163.66,Colombia,PayPal,Returned
+934,2024-05-26,C007,P008,5,219.56,Mexico,Cash,Delivered
+935,2024-01-13,C040,P019,4,450.27,Colombia,Credit Card,Delivered
+936,2024-03-05,C031,P018,3,94.42,Colombia,PayPal,Returned
+937,2024-03-17,C001,P005,3,120.51,Colombia,PIX,Returned
+938,2024-07-30,C046,P001,5,150.81,Colombia,PayPal,Processing
+939,2024-11-02,C026,P001,4,134.53,Argentina,Debit Card,Processing
+940,2024-02-11,C009,P004,2,438.86,Argentina,Debit Card,Returned
+941,2024-08-03,C035,P006,1,327.17,Peru,Debit Card,Cancelled
+942,2024-11-07,C005,P011,5,284.5,Mexico,Cash,Cancelled
+943,2024-05-08,C007,P002,3,312.89,Mexico,Debit Card,Processing
+944,2024-09-07,C017,P004,4,356.32,Colombia,PIX,Returned
+945,2024-03-06,C033,P017,1,454.66,Chile,Cash,Returned
+946,2024-11-29,C043,P018,1,52.75,Chile,Cash,Delivered
+947,2024-04-09,C010,P015,4,366.8,Chile,Credit Card,Delivered
+948,2024-11-05,C024,P008,3,75.48,Chile,Cash,Processing
+949,2024-01-24,C038,P003,1,321.02,Mexico,PIX,Returned
+950,2024-11-19,C038,P014,4,180.66,Mexico,PIX,Returned
+951,2024-07-05,C024,P015,5,438.79,Colombia,PayPal,Cancelled
+952,2024-01-27,C023,P002,5,149.63,Chile,Credit Card,Processing
+953,2024-01-09,C037,P001,5,476.21,Mexico,Cash,Processing
+954,2024-08-19,C047,P011,2,249.59,Argentina,PayPal,Processing
+955,2024-09-18,C003,P004,2,296.53,Brazil,Credit Card,Returned
+956,2024-02-20,C013,P016,3,14.79,Chile,Cash,Delivered
+957,2024-02-28,C005,P001,1,306.68,Peru,Cash,Returned
+958,2024-05-26,C035,P020,3,93.05,Mexico,Cash,Returned
+959,2024-11-17,C038,P004,5,271.61,Peru,PIX,Processing
+960,2024-08-16,C012,P016,4,353.37,Colombia,Cash,Cancelled
+961,2024-01-31,C005,P003,5,36.73,Colombia,Debit Card,Returned
+962,2024-02-18,C012,P006,4,412.25,Brazil,PayPal,Delivered
+963,2024-05-10,C042,P007,4,293.29,Mexico,Debit Card,Delivered
+964,2024-06-30,C048,P016,5,75.63,Chile,Credit Card,Delivered
+965,2024-07-10,C046,P009,1,452.58,Chile,Cash,Cancelled
+966,2024-04-16,C015,P016,2,352.04,Chile,Debit Card,Delivered
+967,2024-05-30,C017,P008,5,286.91,Argentina,Cash,Processing
+968,2024-08-05,C009,P012,3,451.56,Colombia,PIX,Returned
+969,2024-06-25,C007,P018,3,341.49,Mexico,PayPal,Delivered
+970,2024-07-26,C011,P004,2,60.14,Brazil,Cash,Processing
+971,2024-09-26,C016,P004,5,123.19,Brazil,Credit Card,Delivered
+972,2024-07-06,C011,P008,1,303.04,Colombia,PIX,Returned
+973,2024-06-30,C011,P002,5,495.53,Colombia,PIX,Cancelled
+974,2024-06-01,C010,P019,1,85.1,Mexico,Credit Card,Processing
+975,2024-02-07,C032,P014,1,34.1,Chile,Credit Card,Processing
+976,2024-03-31,C004,P003,2,398.89,Brazil,Cash,Processing
+977,2024-12-05,C009,P004,4,248.55,Colombia,PayPal,Processing
+978,2024-07-05,C029,P017,1,126.51,Colombia,Credit Card,Returned
+979,2024-12-19,C048,P020,4,423.65,Colombia,Cash,Cancelled
+980,2024-10-08,C033,P005,4,427.05,Colombia,PIX,Delivered
+981,2024-10-17,C047,P015,4,171.35,Colombia,Cash,Returned
+982,2024-04-22,C014,P015,5,399.24,Argentina,PIX,Delivered
+983,2024-12-17,C025,P004,5,280.52,Mexico,Cash,Delivered
+984,2024-04-18,C038,P003,1,255.52,Mexico,Credit Card,Processing
+985,2024-12-06,C020,P013,4,366.36,Mexico,PayPal,Delivered
+986,2024-04-26,C012,P013,2,376.4,Mexico,PIX,Processing
+987,2024-05-11,C012,P018,1,190.8,Peru,PayPal,Delivered
+988,2024-08-29,C011,P017,4,323.37,Chile,PayPal,Returned
+989,2024-06-05,C005,P018,5,341.64,Peru,Cash,Delivered
+990,2024-02-25,C038,P015,2,21.21,Brazil,PIX,Processing
+991,2024-12-17,C031,P020,5,329.01,Mexico,Cash,Returned
+992,2024-04-08,C010,P008,2,52.66,Brazil,PayPal,Processing
+993,2024-03-11,C038,P003,5,21.45,Chile,PayPal,Cancelled
+994,2024-03-07,C017,P018,3,231.58,Chile,Credit Card,Returned
+995,2024-02-09,C032,P018,5,109.44,Peru,Cash,Returned
+996,2024-07-21,C009,P013,3,158.81,Mexico,PIX,Returned
+997,2024-11-14,C044,P004,4,249.04,Brazil,Debit Card,Delivered
+998,2024-01-03,C043,P005,1,234.43,Peru,PayPal,Processing
+999,2024-05-06,C039,P013,1,10.25,Chile,Cash,Delivered
+1000,2024-09-04,C025,P017,1,456.09,Colombia,Credit Card,Processing
