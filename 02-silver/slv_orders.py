@@ -16,7 +16,6 @@
 # MAGIC     - Converter tipos (`quantity` → int, `unit_price` → float).
 # MAGIC     - Normalizar `country` e `status`.
 # MAGIC     - Criar campo `total_price = quantity * unit_price`.
-# MAGIC     - Filtrar apenas `status = 'Delivered'`.
 # MAGIC
 # MAGIC Autor: David Costa
 
@@ -40,7 +39,7 @@ dicionario = {
     "orTable": "ing_orders",
     # Informações.
     "PK": "order_id",
-    "partition": "dt_ingestion",
+    "partition": "dt_partition",
     "sequence_by": "order_date",
     "Descrição": "Dados tratados e padronizados, com tipos corrigidos, campos calculados e registros inválidos filtrados."
 }
@@ -102,9 +101,13 @@ orders_schema_dict = {
         "datatype": "string",
         "description": "Status do pedido. Somente registros com Delivered são mantidos."
     },
-    "ts_carga": {
-        "datatype": "timestamp",
-        "description": "Data e hora da última atualização do registro."
+    "dt_partition": {
+        "datatype": "date",
+        "description": "Data de ingestão do registro no Data Lake."
+    },
+    "ts_load": {
+        "datatype": "Timestamp",
+        "description": "Data e hora de ingestão do registro no Data Lake."
     }
 }
 
@@ -115,21 +118,14 @@ orders_schema_dict = {
 
 # COMMAND ----------
 
-from pyspark.sql.functions import col, date_sub, current_date, initcap, round, upper, when, current_timestamp
+from pyspark.sql.functions import col, date_sub, current_date, initcap, round, upper, when, current_date, current_timestamp, row_number
 from delta.tables import DeltaTable
+from pyspark.sql.window import Window
 
 # COMMAND ----------
 
 # MAGIC %md
 # MAGIC ## 01.4 Configurações de Ambientes
-
-# COMMAND ----------
-
-# DBTITLE 1,Cell 9
-# Retorna uma lista de objetos de partição
-partitions = spark.sql("SHOW PARTITIONS lakeflow.b_bronze.ing_orders").collect()
-
-display(partitions)
 
 # COMMAND ----------
 
@@ -145,9 +141,13 @@ boolean_carga_full = True
 # Verifica se a tabela de destino já existe. Se existir, realiza carga incremental.
 if spark.catalog.tableExists(path):
     boolean_carga_full = False
-    print(f"Carga incremental.")
-else:
-    print(f"Carga completa.")
+
+    # Retorna uma lista de objetos de partição
+    partitions = spark.sql(f"SHOW PARTITIONS {path}")
+
+    # Obtém a data da última partição criada.
+    max_partition = partitions.select(max("dt_partition")).first()[0]
+    print(f"Carga incremental a partir da data: {max_partition}")
 
 # COMMAND ----------
 
@@ -158,11 +158,11 @@ else:
 
 # Leitura das informações do arquivo CSV na camada Bronze.
 if boolean_carga_full == False:
-    # Carga incremental: lê apenas pedidos dos últimos 3 dias.
+    # Carga incremental: lê apenas as partições mais recentes.
     df_bronze = (
         spark.read \
         .table(orPath)
-        .filter(col("order_date").cast("date") >= date_sub(current_date(), 3))
+        .filter(col("dt_partition") >= max_partition)
     )
 else:
     # Carga completa: lê todos os pedidos da tabela de origem.
@@ -171,6 +171,10 @@ else:
         .table(orPath)
     )
 
+print(f"Quantidade de registros lidos: {df_bronze.count()}")
+# Exibe o esquema da tabela.
+df_bronze.printSchema()
+
 # COMMAND ----------
 
 # MAGIC %md
@@ -178,15 +182,20 @@ else:
 
 # COMMAND ----------
 
+# Loop pelas colunas definidas no dicionário de schema.
 for field in orders_schema_dict.keys():
     try:
+        # Obtém o tipo de dado atual da coluna no DataFrame.
         dsType = df_bronze.schema[field].dataType.simpleString()
     except:
+        # Caso a coluna não exista, exibe mensagem de erro e continua.
         print(f"Erro: {field}. Coluna não localizada.")
         continue
 
+    # Obtém o tipo de dado desejado conforme o dicionário de schema.
     dsTypeNew = orders_schema_dict[field]['datatype']
 
+    # Realiza a conversão de tipo conforme especificado.
     if dsTypeNew == "string":
         df_bronze = df_bronze.withColumn(
             field,
@@ -216,6 +225,7 @@ for field in orders_schema_dict.keys():
         print(f"Coluna '{field}' convertida de '{dsType}' para Date.")
     
     else: 
+        # Caso o tipo de dado não seja suportado, exibe mensagem de erro.
         print(f"Erro: {field}. O tipo de dados '{dsType}' não é suportado.")
 
 # COMMAND ----------
@@ -225,23 +235,22 @@ for field in orders_schema_dict.keys():
 
 # COMMAND ----------
 
+# Adiciona a coluna 'total_price' calculando o valor total do pedido (quantity × unit_price) arredondado para 2 casas decimais.
 df_new_column = df_bronze.withColumn(
     "total_price",
     round(col("quantity") * col("unit_price"), 2))
 
 # COMMAND ----------
 
+# Normaliza o nome do país para formato capitalizado (ex: 'Brasil', 'Estados Unidos').
 df_normalize01 = df_new_column.withColumn(
     "country",
     initcap(col("country")))
 
+# Normaliza o status do pedido para letras maiúsculas (ex: 'DELIVERED').
 df_normalize02 = df_normalize01.withColumn(
     "status",
     upper(col("status")))
-
-# COMMAND ----------
-
-df_filter_status = df_normalize02.filter(col("status") == "DELIVERED")
 
 # COMMAND ----------
 
@@ -250,20 +259,26 @@ df_filter_status = df_normalize02.filter(col("status") == "DELIVERED")
 
 # COMMAND ----------
 
-df_treat = df_filter_status
+# DataFrame tratado após normalização.
+df_treat = df_normalize02
 
+# Loop para tratar valores nulos conforme o tipo de dado de cada coluna.
 for field in df_treat.columns:
     type_ds = df_treat.schema[field].dataType.simpleString()
 
+    # Preenche nulos de colunas string com '#NI'.
     if type_ds == 'string':
         df_treat = df_treat.fillna({field: '#NI'})
     
+    # Preenche nulos de colunas integer com -1.
     elif type_ds == 'integer':
         df_treat = df_treat.fillna({field: -1})
         
+    # Preenche nulos de colunas double com -1.0.
     elif type_ds == 'double':
         df_treat = df_treat.fillna({field: -1.0})
     
+    # Preenche nulos de colunas date com '1900-01-01'.
     elif type_ds == 'date':
         df_treat = df_treat.withColumn(
             field,
@@ -276,19 +291,44 @@ for field in df_treat.columns:
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC ## 06. Adicionando data e hora da carga
+# MAGIC ## 06. Aplicação de filtros
 
 # COMMAND ----------
 
-df_ts = df_treat.withColumn("ts_carga", current_timestamp())
+# DBTITLE 1,Cell 21
+# Define a janela para particionar por 'order_id' e ordenar por 'ts_load' decrescente.
+window_spec = Window.partitionBy("order_id").orderBy(col("ts_load").desc())
+
+# Seleciona o registro mais recente por 'order_id' e remove colunas técnicas.
+df_filterd = (
+    df_treat
+    .withColumn("row_num", row_number().over(window_spec))  # Adiciona número da linha para cada partição.
+    .filter(col("row_num") == 1)
+    .drop(*["row_num", "ts_load", "dt_partition"])          # Remove colunas auxiliares.
+)
 
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC ## 07. Seleção das colunas
+# MAGIC ## 07. Adicionando data e hora da carga
 
 # COMMAND ----------
 
+# Adiciona uma coluna com a data de ingestão.
+df_ts = (
+    df_filterd \
+        .withColumn('dt_partition', current_date())
+        .withColumn('ts_load', current_timestamp())
+)
+
+# COMMAND ----------
+
+# MAGIC %md
+# MAGIC ## 07. Selecionando Colunas
+
+# COMMAND ----------
+
+# Seleciona apenas as colunas definidas no dicionário de schema para o DataFrame final.
 df_select = df_ts.select(*orders_schema_dict.keys())
 
 # COMMAND ----------
@@ -298,21 +338,34 @@ df_select = df_ts.select(*orders_schema_dict.keys())
 
 # COMMAND ----------
 
-# Grava os dados no Formato Delta na camada Silver, realizando Merge (Up/Insert) de dados.
-from delta.tables import DeltaTable
-
-delta_table = DeltaTable.forName(spark, path)
-
-(
-    delta_table.alias("t")
-    .merge(
-        source=df_select.alias("s"),
-        condition=f"t.{dicionario['PK']} = s.{dicionario['PK']}"
+if boolean_carga_full:
+    # Carga completa: sobrescreve a tabela Silver com todos os dados tratados.
+    (
+        df_select \
+            .write \
+            .format("delta") \
+            .mode("overwrite") \
+            .partitionBy(dicionario['partition']) \
+            .saveAsTable(path)
     )
-    .whenMatchedUpdateAll()
-    .whenNotMatchedInsertAll()
-    .execute()
-)
+
+else:
+    # Carga incremental: realiza merge (upsert) dos dados tratados na tabela Silver existente.
+    delta_table = DeltaTable.forName(spark, path)
+
+    (
+        delta_table.alias("t")
+        .merge(
+
+            
+            source=df_select.alias("s"),
+            condition=f"t.{dicionario['PK']} = s.{dicionario['PK']}"
+        )
+        # Realiza atualização das linhas existentes e insere novas linhas.
+        .whenMatchedUpdateAll()
+        .whenNotMatchedInsertAll()
+        .execute()
+    )
 
 # COMMAND ----------
 
@@ -345,8 +398,3 @@ if len(orders_schema_dict):
         sql_cd = f"ALTER TABLE {path} ALTER COLUMN {field} COMMENT '{description}'"
         # Executa o comando SQL.
         spark.sql(sql_cd)
-
-# COMMAND ----------
-
-# MAGIC %sql
-# MAGIC SELECT * FROM workspace.`02silver`.slv_orders

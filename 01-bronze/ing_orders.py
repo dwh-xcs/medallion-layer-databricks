@@ -6,7 +6,7 @@
 # MAGIC   - `order_id`
 # MAGIC
 # MAGIC - Partition:
-# MAGIC   - `dt_ingestion`
+# MAGIC   - `dt_partition`
 # MAGIC
 # MAGIC - Descrição: 
 # MAGIC   - Tabela bruta com os dados originais de pedidos, diretamente ingeridos do arquivo CSV sem transformações.
@@ -38,7 +38,7 @@ dicionario = {
     "orFile": "orders_raw.csv",
     # Informações.
     "PK": "order_id",
-    "partition": "dt_ingestion",
+    "partition": "dt_partition",
     "Descrição": "Tabela bruta com os dados originais de pedidos, diretamente ingeridos do arquivo CSV sem transformações."
 }
 
@@ -95,9 +95,13 @@ orders_schema_dict = {
         "datatype": "String",
         "description": "Situação do pedido no sistema (Delivered, Cancelled, Returned, etc)."
     },
-    "dt_ingestion": {
+    "dt_partition": {
         "datatype": "Date",
         "description": "Data de ingestão do registro no Data Lake."
+    },
+    "ts_load": {
+        "datatype": "Timestamp",
+        "description": "Data e hora de ingestão do registro no Data Lake."
     }
 }
 
@@ -110,7 +114,7 @@ orders_schema_dict = {
 
 from pyspark.sql import SparkSession
 from pyspark.sql.types import StructType, StructField, StringType, LongType
-from pyspark.sql.functions import col, to_timestamp, to_date, current_date
+from pyspark.sql.functions import col, to_timestamp, to_date, current_date, current_timestamp, max
 
 # COMMAND ----------
 
@@ -128,12 +132,14 @@ if spark.catalog.tableExists(path):
     boolean_carga_full = False
 
     # Retorna uma lista de objetos de partição
-    partitions = spark.sql(f"SHOW PARTITIONS {path}").collect()
+    partitions = spark.sql(f"SHOW PARTITIONS {path}")
+
     # Obtém a data da última partição criada.
-    max_partition = max([p[dicionario['partition']] for p in partitions])
+    max_partition = partitions.select(max("dt_partition")).first()[0]
     print(f"Carga incremental a partir da data: {max_partition}")
 
 else:
+    max_partition = "1900-01-01"
     print(f"Carga completa.")
 
 # COMMAND ----------
@@ -201,7 +207,9 @@ df_bronze.printSchema()
 
 # Adiciona uma coluna com a data de ingestão.
 df_bronze01 = (
-    df_bronze.withColumn('dt_ingestion', current_date())
+    df_bronze \
+        .withColumn('dt_partition', current_date())
+        .withColumn('ts_load', current_timestamp())
 )
 
 # COMMAND ----------
