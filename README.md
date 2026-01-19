@@ -7,7 +7,7 @@ O objetivo é transformar dados brutos de vendas em um modelo dimensional (Star 
 
 O pipeline foi desenhado seguindo as melhores práticas de Engenharia de Dados, garantindo idempotência e suporte a cargas incrementais via **Delta Lake**.
 
-![Fluxo de Dados - Arquitetura Medalhão](img/job_fluxo.jpeg)
+![Fluxo de Dados - Arquitetura Medalhão](z-img/job_fluxo.jpeg)
 *Exemplo do fluxo: Bronze (Raw) ➡️ Silver (Standardized) ➡️ Gold (Business)*
 
 ### Camadas:
