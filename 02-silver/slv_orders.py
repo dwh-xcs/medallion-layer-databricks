@@ -26,6 +26,7 @@
 
 # COMMAND ----------
 
+# DBTITLE 1,Cell 3
 # Definições de parâmetros e Descrição.
 dicionario = {
     ## Destino.
@@ -45,15 +46,16 @@ dicionario = {
 }
 
 # Cria o caminho de origem dos arquivos.
-orPath = f'{dicionario['orCatalog']}.{dicionario['orSchema']}.{dicionario['orTable']}'
+orPath = f'{dicionario["orCatalog"]}.{dicionario["orSchema"]}.{dicionario["orTable"]}'
 print(f"Caminho de origem (Bronze): {orPath}")
 
 # Cria o caminho de destino dos arquivos.
-path = f'{dicionario['catalog']}.{dicionario['schema']}.{dicionario['prefix']}_{dicionario['table']}'
+path = f'{dicionario["catalog"]}.{dicionario["schema"]}.{dicionario["prefix"]}_{dicionario["table"]}'
 print(f"Caminho de destino (Silver): {path}")
 
 # COMMAND ----------
 
+# MAGIC
 # MAGIC %md
 # MAGIC ## 01.2 Dicionário de Colunas
 
@@ -146,7 +148,7 @@ if spark.catalog.tableExists(path):
     partitions = spark.sql(f"SHOW PARTITIONS {path}")
 
     # Obtém a data da última partição criada.
-    max_partition = partitions.select(max("dt_partition")).first()[0]
+    max_partition = partitions.select(max(dicionario["partition"])).first()[0]
     print(f"Carga incremental a partir da data: {max_partition}")
 
 # COMMAND ----------
