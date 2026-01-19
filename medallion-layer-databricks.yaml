@@ -1,0 +1,58 @@
+resources:
+  jobs:
+    medallion_layer_databricks:
+      name: medallion-layer-databricks
+      # email_notifications:
+      #   on_success:
+      #     - {email}
+      #   on_failure:
+      #     - {email}
+      schedule:
+        quartz_cron_expression: 15 0 18 * * ?
+        timezone_id: America/Sao_Paulo
+        pause_status: UNPAUSED
+      tasks:
+        - task_key: L-Bronze
+          notebook_task:
+            notebook_path: /Workspace/medallion-layer-databricks/01-bronze/ing_orders
+            source: WORKSPACE
+        - task_key: L-Silver
+          depends_on:
+            - task_key: L-Bronze
+          notebook_task:
+            notebook_path: /Workspace/medallion-layer-databricks/02-silver/slv_orders
+            source: WORKSPACE
+        - task_key: L-Gold-dim_cliente
+          depends_on:
+            - task_key: L-Silver
+          notebook_task:
+            notebook_path: /Workspace/medallion-layer-databricks/03-gold/dim_cliente
+            source: WORKSPACE
+        - task_key: L-Gold-dim_pais
+          depends_on:
+            - task_key: L-Silver
+          notebook_task:
+            notebook_path: /Workspace/medallion-layer-databricks/03-gold/dim_pais
+            source: WORKSPACE
+        - task_key: L-Gold-dim_produto
+          depends_on:
+            - task_key: L-Silver
+          notebook_task:
+            notebook_path: /Workspace/medallion-layer-databricks/03-gold/dim_produto
+            source: WORKSPACE
+        - task_key: L-Gold-dim_tempo
+          depends_on:
+            - task_key: L-Silver
+          notebook_task:
+            notebook_path: /Workspace/medallion-layer-databricks/03-gold/dim_tempo
+            source: WORKSPACE
+        - task_key: L-Gold-fat_vendas
+          depends_on:
+            - task_key: L-Gold-dim_cliente
+            - task_key: L-Gold-dim_pais
+            - task_key: L-Gold-dim_produto
+            - task_key: L-Gold-dim_tempo
+          notebook_task:
+            notebook_path: /Workspace/medallion-layer-databricks/03-gold/fat_vendas
+            source: WORKSPACE
+      performance_target: PERFORMANCE_OPTIMIZED
